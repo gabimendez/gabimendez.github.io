@@ -1,27 +1,51 @@
 [
+   {
+    "event": "FAUBAI Conference 2026",
+    "topic": "International Education",
+    "location": "Florianópolis,Brazil",
+    "modality": "In-person",
+    "month": "April",
+    "dates": "April 12-15, 2026",
+    "cfp": "October 31, 2025",
+    "fee": "$369 - $599",
+    "scholarships": "Limited",
+    "link": "https://faubai.org.br/conf/2026/"
+  },
   {
     "event": "NAFSA 2026 Annual Conference & Expo",
     "topic": "International Education",
-    "location": "Orlando, USA",
+    "location": "Los Angeles, CA, USA",
     "modality": "In-person",
-    "month": "May",
-    "dates": "May 26–29, 2026",
-    "cfp": "Yes",
+    "month": "June",
+    "dates": "June 1-4, 2027",
+    "cfp": "August 26, 2026",
     "fee": "$$$",
     "scholarships": "Yes",
-    "link": "https://www.nafsa.org/2026"
+    "link": "https://www.nafsa.org/2027/cfp"
   },
   {
     "event": "EAIE Conference 2026",
     "topic": "International Education",
-    "location": "Glasgow, UK",
+    "location": "Glasgow, Scotland, UK",
     "modality": "In-person",
     "month": "September",
     "dates": "Sept 8–11, 2026",
-    "cfp": "Yes",
-    "fee": "$$$",
+    "cfp": "CLOSED",
+    "fee": "€719 - €1079",
     "scholarships": "Limited",
     "link": "https://www.eaie.org/events/glasgow.html"
+  },
+  {
+    "event": "AAC&U Global Learning Conference - Virtual Conference Online",
+    "topic": "Global Learning",
+    "location": "Washington, DC, USA",
+    "modality": "Online",
+    "month": "October"
+    "dates": "October 13-14, 2026",
+    "cfp": "CLOSED",
+    "fee": "$99 - $349",
+    "scholarships": "No",
+    "link": "https://www.aacu.org/event/2026-conference-on-global-learning"
   },
   {
     "event": "IVEC Conference",
@@ -29,46 +53,34 @@
     "location": "Varies",
     "modality": "Hybrid",
     "month": "October",
-    "dates": "TBD",
-    "cfp": "Yes",
-    "fee": "$$",
+    "dates": "October 26-29, 2026",
+    "cfp": "CLOSED",
+    "fee": "$50 - $285",
     "scholarships": "Yes",
     "link": "https://iveconference.org/"
   },
   {
-    "event": "FAUBAI Conference 2026",
-    "topic": "International Education",
-    "location": "Brazil",
-    "modality": "In-person",
-    "month": "April",
-    "dates": "TBD",
-    "cfp": "Yes",
-    "fee": "$$",
-    "scholarships": "Limited",
-    "link": "https://faubai.org.br/conf/2026/"
-  },
-  {
     "event": "AAC&U Global Learning Conference",
     "topic": "Global Learning",
-    "location": "USA",
-    "modality": "Hybrid",
-    "month": "November",
-    "dates": "TBD",
-    "cfp": "Yes",
-    "fee": "$$",
-    "scholarships": "Yes",
+    "location": "Washington, DC, USA",
+    "modality": "In-Person",
+    "month": "November"
+    "dates": "November 12-14, 2026",
+    "cfp": "CLOSED",
+    "fee": "$175 - $800",
+    "scholarships": "No",
     "link": "https://www.aacu.org/event/2026-conference-on-global-learning"
   },
   {
     "event": "ANGEL Conference",
-    "topic": "Virtual Exchange / COIL",
-    "location": "Online",
-    "modality": "Online",
+    "topic": "Global Learning / Intercultural Education",
+    "location": "Bologna, Italy",
+    "modality": "In-person",
     "month": "September",
-    "dates": "TBD",
-    "cfp": "Yes",
-    "fee": "$",
-    "scholarships": "Yes",
+    "dates": "September 10-11, 2026",
+    "cfp": "CLOSED",
+    "fee": "£180 - £300",
+    "scholarships": "No",
     "link": "https://angel-network.net/ANGELConference2026_Call"
   }
 ]

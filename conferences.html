@@ -31,7 +31,7 @@
 </section>
 
 <script>
-fetch('conference-data.json')
+fetch('conferences.json')
   .then(response => response.json())
   .then(data => {
     const table = document.querySelector("#conferenceTable tbody");

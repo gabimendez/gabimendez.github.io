@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conference Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Conference Tracker</h1>
+</header>
+
+<section>
+  <table id="conferenceTable" border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Location</th>
+        <th>Modality</th>
+        <th>CFP</th>
+        <th>Dates</th>
+        <th>Fee</th>
+        <th>Scholarship</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<script>
+fetch('conference-data.json')
+  .then(response => response.json())
+  .then(data => {
+    const table = document.querySelector("#conferenceTable tbody");
+    data.forEach(conf => {
+      const row = `
+        <tr>
+          <td>${conf.event}</td>
+          <td>${conf.location}</td>
+          <td>${conf.modality}</td>
+          <td>${conf.call_for_proposals}</td>
+          <td>${conf.event_dates}</td>
+          <td>${conf.registration_fee}</td>
+          <td>${conf.scholarship}</td>
+          <td><a href="${conf.link}" target="_blank">Info</a></td>
+        </tr>
+      `;
+      table.innerHTML += row;
+    });
+  });
+</script>
+
+</body>
+</html>

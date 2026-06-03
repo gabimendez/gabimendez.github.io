@@ -1,383 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>International Education Conferences</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --ink:#0f1923;--paper:#f4f0e8;--accent:#1a5f7a;--accent2:#c8502a;
-      --muted:#6b7c8d;--card:#ffffff;--border:#ddd8cc;
-      --ip-bg:#d4edda;--ip-c:#1a5c2d;--on-bg:#d1ecf1;--on-c:#0c5460;
-      --hy-bg:#fff3cd;--hy-c:#856404;
-    }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;min-height:100vh}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>International Education Conferences</title>
 
-    /* HEADER */
-    header{background:var(--ink);color:var(--paper);padding:3.5rem 2rem 2.5rem;position:relative;overflow:hidden}
-    header::before{content:'';position:absolute;top:-70px;right:-70px;width:340px;height:340px;border:2px solid rgba(245,240,232,.1);border-radius:50%}
-    header::after{content:'';position:absolute;bottom:-50px;left:-50px;width:220px;height:220px;border:2px solid rgba(200,80,42,.18);border-radius:50%}
-    .header-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
-    .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent2);margin-bottom:.75rem}
-    header h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:900;line-height:1.1;max-width:680px}
-    header h1 em{font-style:italic;color:var(--accent2)}
-    .header-sub{margin-top:.9rem;font-size:.95rem;color:rgba(244,240,232,.6);max-width:580px}
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    /* RIBBON */
-    .ribbon{background:var(--accent);padding:.75rem 2rem}
-    .ribbon-inner{max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.45rem;align-items:center}
-    .ribbon-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-right:.3rem}
-    .pill{font-size:.7rem;font-weight:500;padding:.22rem .72rem;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.85);cursor:pointer;background:transparent;transition:background .15s,border-color .15s}
-    .pill:hover,.pill.active{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.8)}
+<style>
+:root{
+  --c1:#f59eb6;
+  --c2:#92d3cd;
+  --c3:#9e92d9;
+  --c4:#4ea46c;
+  --c5:#ff653a;
+  --c6:#c5d304;
+  --c7:#acd7e9;
+  --c8:#febe09;
 
-    /* CONTROLS */
-    .controls{max-width:1120px;margin:1.75rem auto 0;padding:0 2rem;display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
-    .search-wrap{flex:1 1 220px;position:relative}
-    .search-wrap svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);opacity:.4;pointer-events:none}
-    #search{width:100%;padding:.6rem 1rem .6rem 2.5rem;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.87rem;background:white;color:var(--ink);outline:none;transition:border-color .2s}
-    #search:focus{border-color:var(--accent)}
-    .select-wrap{position:relative}
-    .select-wrap svg{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);pointer-events:none;opacity:.45}
-    select{appearance:none;padding:.6rem 2.2rem .6rem .9rem;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.87rem;background:white;color:var(--ink);cursor:pointer;outline:none;transition:border-color .2s}
-    select:focus{border-color:var(--accent)}
-    .mod-group{display:flex;gap:.4rem;flex-wrap:wrap}
-    .mod-btn{padding:.5rem .95rem;border-radius:7px;font-size:.78rem;font-weight:500;cursor:pointer;border:1.5px solid var(--border);background:white;color:var(--muted);transition:all .15s}
-    .mod-btn:hover{border-color:var(--accent);color:var(--accent)}
-    .mod-btn.active{background:var(--accent);border-color:var(--accent);color:white}
-    .results-count{margin-left:auto;font-size:.78rem;color:var(--muted);white-space:nowrap}
+  --ink:#1f2933;
+  --muted:#6b7280;
+  --bg:#f9fafb;
+  --card:#ffffff;
+  --border:#e5e7eb;
+}
 
-    /* SORT BAR */
-    .sub-controls{max-width:1120px;margin:.75rem auto 1.5rem;padding:0 2rem;display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
-    .sort-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-    .sort-group{display:flex;gap:.35rem;flex-wrap:wrap}
-    .sort-btn{display:flex;align-items:center;gap:.3rem;padding:.38rem .8rem;border-radius:6px;font-size:.76rem;font-weight:500;cursor:pointer;border:1.5px solid var(--border);background:white;color:var(--muted);transition:all .15s}
-    .sort-btn:hover{border-color:var(--accent2);color:var(--accent2)}
-    .sort-btn.active{background:var(--accent2);border-color:var(--accent2);color:white}
-    .sort-btn svg{transition:transform .2s}
-    .sort-btn.asc svg{transform:rotate(0deg)}
-    .sort-btn.desc svg{transform:rotate(180deg)}
-    .active-filters{display:flex;gap:.4rem;flex-wrap:wrap;margin-left:auto}
-    .af-chip{display:flex;align-items:center;gap:.35rem;padding:.25rem .65rem;border-radius:999px;font-size:.7rem;font-weight:600;background:#e8f0f5;color:var(--accent);border:1px solid #c5d8e4}
-    .af-chip button{background:none;border:none;cursor:pointer;color:var(--accent);font-size:.85rem;line-height:1;padding:0;display:flex;align-items:center}
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Manrope',sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+}
 
-    /* GRID */
-    .grid{max-width:1120px;margin:0 auto 5rem;padding:0 2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:1.4rem}
+/* TYPOGRAPHY */
+h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-0.02em}
+h2{font-size:1.4rem;font-weight:700}
+h3{font-size:1.05rem;font-weight:600}
+p{font-size:.95rem;color:var(--muted)}
 
-    /* CARD */
-    .card{background:var(--card);border:1.5px solid var(--border);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;transition:transform .2s,box-shadow .2s;animation:fadeUp .35s ease both}
-    .card:hover{transform:translateY(-5px);box-shadow:0 14px 44px rgba(15,25,35,.1)}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-    .card-stripe{height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
-    .card-body{padding:1.35rem 1.35rem 0;flex:1}
-    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.7rem;margin-bottom:.85rem}
-    .card-topic{font-size:.67rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent2);margin-bottom:.2rem}
-    .card-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;line-height:1.3}
-    .mod-badge{flex-shrink:0;font-size:.67rem;font-weight:600;padding:.28rem .68rem;border-radius:999px;text-transform:capitalize;letter-spacing:.03em}
-    .mod-badge.in-person{background:var(--ip-bg);color:var(--ip-c)}
-    .mod-badge.online{background:var(--on-bg);color:var(--on-c)}
-    .mod-badge.hybrid{background:var(--hy-bg);color:var(--hy-c)}
-    .card-meta{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-bottom:.9rem}
-    .mi{display:flex;flex-direction:column;gap:.12rem}
-    .ml{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-    .mv{font-size:.82rem;font-weight:500}
-    .mv.tba{color:var(--muted);font-style:italic}
-    .mv.closed{color:#b04040;font-weight:600}
-    .mv.open{color:#1a5c2d;font-weight:600}
-    .card-row{display:flex;align-items:center;gap:.5rem;margin-bottom:.85rem}
-    .fee-badge{font-size:.72rem;font-weight:600;padding:.22rem .6rem;border-radius:5px;background:#f0f4f8;color:var(--accent)}
-    .schol-badge{font-size:.72rem;font-weight:600;padding:.22rem .6rem;border-radius:5px}
-    .schol-badge.yes{background:#d4edda;color:#1a5c2d}
-    .schol-badge.limited{background:#fff3cd;color:#856404}
-    .schol-badge.no{background:#f5e0e0;color:#b04040}
-    .card-footer{padding:.9rem 1.35rem;border-top:1px solid var(--border)}
-    .card-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--accent);text-decoration:none;transition:gap .15s}
-    .card-link:hover{gap:.65rem;text-decoration:underline}
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--c3),var(--c7));
+  padding:3rem 2rem;
+  position:relative;
+  overflow:hidden;
+  color:white;
+}
+header::before{
+  content:'';
+  position:absolute;
+  width:220px;height:220px;
+  background:var(--c1);
+  opacity:.25;
+  border-radius:30%;
+  top:-60px;right:-60px;
+}
+header::after{
+  content:'';
+  position:absolute;
+  width:180px;height:180px;
+  background:var(--c8);
+  opacity:.25;
+  border-radius:50%;
+  bottom:-60px;left:-40px;
+}
 
-    /* MONTH HEADER */
-    .month-header{grid-column:1/-1;display:flex;align-items:center;gap:1rem;margin-top:.5rem}
-    .month-header h2{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;white-space:nowrap;color:var(--accent)}
-    .month-divider{flex:1;height:1px;background:var(--border)}
+.header-inner{max-width:1100px;margin:auto;position:relative;z-index:1}
+.eyebrow{
+  font-size:.7rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:.5rem;
+  opacity:.85;
+}
+.header-sub{margin-top:.6rem;max-width:600px}
 
-    /* EMPTY */
-    #empty{display:none;max-width:1120px;margin:3rem auto;padding:0 2rem;text-align:center;color:var(--muted)}
-    #empty p{font-size:.95rem;margin-top:.5rem}
+/* RIBBON */
+.ribbon{
+  background:white;
+  border-bottom:1px solid var(--border);
+  padding:.8rem 2rem;
+}
+.ribbon-inner{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:.5rem}
+.pill{
+  font-size:.75rem;
+  padding:.3rem .8rem;
+  border-radius:999px;
+  border:1px solid var(--border);
+  cursor:pointer;
+  background:white;
+  transition:.2s;
+}
+.pill:hover{background:var(--c2);color:white}
+.pill.active{background:var(--c4);color:white}
 
-    /* FOOTER */
-    footer{background:var(--ink);color:rgba(244,240,232,.45);text-align:center;padding:1.4rem;font-size:.78rem}
-    footer a{color:rgba(200,80,42,.75)}
+/* CONTROLS */
+.controls,.sub-controls{
+  max-width:1100px;
+  margin:1.5rem auto;
+  padding:0 2rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.7rem;
+  align-items:center;
+}
+input,select{
+  padding:.55rem .8rem;
+  border-radius:8px;
+  border:1px solid var(--border);
+  font-family:inherit;
+  font-size:.85rem;
+}
+input:focus,select:focus{outline:none;border-color:var(--c3)}
 
-    @media(max-width:620px){
-      header{padding:2.5rem 1.25rem 2rem}
-      .controls,.sub-controls,.grid{padding:0 1.25rem}
-      .card-meta{grid-template-columns:1fr}
-      .results-count{margin-left:0}
-    }
-  </style>
+.mod-btn{
+  padding:.45rem .8rem;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:white;
+  cursor:pointer;
+  font-size:.8rem;
+}
+.mod-btn.active{background:var(--c3);color:white}
+
+/* GRID */
+.grid{
+  max-width:1100px;
+  margin:auto;
+  padding:0 2rem 4rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:1.2rem;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  transition:.2s;
+  position:relative;
+}
+.card:hover{transform:translateY(-4px)}
+
+.card::before{
+  content:'';
+  position:absolute;
+  width:60px;height:60px;
+  background:var(--c2);
+  opacity:.2;
+  border-radius:20%;
+  top:-10px;right:-10px;
+}
+
+.card-body{padding:1.2rem}
+.card-topic{
+  font-size:.65rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--c5);
+  margin-bottom:.2rem;
+}
+.card-title{font-size:1rem;font-weight:700;margin-bottom:.6rem}
+
+.card-meta{
+  display:grid;
+  gap:.4rem;
+  font-size:.82rem;
+}
+.ml{font-size:.65rem;text-transform:uppercase;color:var(--muted)}
+.mv{font-weight:500}
+
+/* BADGES */
+.mod-badge{
+  font-size:.7rem;
+  padding:.2rem .6rem;
+  border-radius:999px;
+  background:var(--c7);
+}
+.scholar{margin-top:.6rem;font-size:.8rem}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:1.5rem;
+  font-size:.8rem;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+
+/* EMPTY */
+#empty{text-align:center;margin:3rem;color:var(--muted)}
+
+</style>
 </head>
+
 <body>
 
 <header>
   <div class="header-inner">
-    <p class="eyebrow">Conference Directory</p>
-    <h1>International <em>Education</em><br>Conferences</h1>
-    <p class="header-sub">Curated events on international education, global learning, COIL, virtual exchange, and intercultural education.</p>
+    <div class="eyebrow">Conference Directory</div>
+    <h1>International Education Conferences</h1>
+    <p class="header-sub">
+      Explore curated conferences on global learning, COIL, and international education.
+    </p>
   </div>
 </header>
 
 <div class="ribbon">
   <div class="ribbon-inner">
-    <span class="ribbon-label">Topics:</span>
-    <button class="pill" onclick="filterTopic(this,'International Education')">International Education</button>
-    <button class="pill" onclick="filterTopic(this,'Global Learning')">Global Learning</button>
-    <button class="pill" onclick="filterTopic(this,'Virtual Exchange')">Virtual Exchange</button>
-    <button class="pill" onclick="filterTopic(this,'Intercultural Education')">Intercultural Education</button>
-    <button class="pill" onclick="filterTopic(this,'COIL')">COIL</button>
+    <button class="pill">International Education</button>
+    <button class="pill">Global Learning</button>
+    <button class="pill">Virtual Exchange</button>
+    <button class="pill">COIL</button>
   </div>
 </div>
 
 <div class="controls">
-  <div class="search-wrap">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input type="text" id="search" placeholder="Search events, topics, locations…" oninput="render()" />
-  </div>
-  <div class="mod-group">
-    <button class="mod-btn active" onclick="setModality(this,'all')">All</button>
-    <button class="mod-btn" onclick="setModality(this,'in-person')">In-Person</button>
-    <button class="mod-btn" onclick="setModality(this,'online')">Online</button>
-    <button class="mod-btn" onclick="setModality(this,'hybrid')">Hybrid</button>
-  </div>
-  <div class="select-wrap">
-    <select id="monthFilter" onchange="render()">
-      <option value="">All Months</option>
-    </select>
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-  </div>
-  <div class="select-wrap">
-    <select id="scholFilter" onchange="render()">
-      <option value="">All Scholarships</option>
-      <option value="yes">Available</option>
-      <option value="limited">Limited</option>
-      <option value="no">None</option>
-    </select>
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-  </div>
-  <span class="results-count" id="count"></span>
+  <input type="text" placeholder="Search conferences..." />
+  <button class="mod-btn active">All</button>
+  <button class="mod-btn">In-person</button>
+  <button class="mod-btn">Online</button>
+  <button class="mod-btn">Hybrid</button>
 </div>
 
-<div class="sub-controls">
-  <span class="sort-label">Sort by:</span>
-  <div class="sort-group">
-    <button class="sort-btn active asc" id="sort-date" onclick="setSort('date',this)">
-      Date <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-    </button>
-    <button class="sort-btn asc" id="sort-name" onclick="setSort('name',this)">
-      Name <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-    </button>
-    <button class="sort-btn asc" id="sort-location" onclick="setSort('location',this)">
-      Location <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-    </button>
+<div class="grid">
+
+  <div class="card">
+    <div class="card-body">
+      <div class="card-topic">International Education</div>
+      <div class="card-title">NAFSA Annual Conference</div>
+
+      <div class="card-meta">
+        <div><span class="ml">Location</span><br><span class="mv">Los Angeles, USA</span></div>
+        <div><span class="ml">Dates</span><br><span class="mv">June 1–4, 2027</span></div>
+      </div>
+
+      <div class="scholar">🎓 Scholarships: Yes</div>
+    </div>
   </div>
-  <div class="active-filters" id="activeFilters"></div>
+
 </div>
 
-<div class="grid" id="grid"></div>
-<div id="empty">
-  <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-  <p>No conferences match your filters. Try adjusting your search.</p>
-</div>
+<div id="empty">No results found</div>
 
 <footer>
-  <p>Updated June 2026 · Data sourced from official conference websites · <a href="mailto:your@email.com">Suggest an event</a></p>
+  Updated June 2026 · Suggest an event
 </footer>
 
-<script>
-let allData = [];
-let sortKey = 'date', sortDir = 'asc';
-let activeModality = 'all', activeTopic = null;
-
-const MONTHS = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,sept:8,oct:9,nov:10,dec:11,
-  january:0,february:1,march:2,april:3,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
-
-function parseEventDate(s) {
-  if (!s) return null;
-  s = s.replace(/\u2013|\u2014/g,'-').toLowerCase().trim();
-  const m1 = s.match(/([a-z]+)\s+(\d+)[\s\-]+\d+,?\s*(\d{4})/);
-  if (m1 && MONTHS[m1[1]] !== undefined) return new Date(+m1[3], MONTHS[m1[1]], +m1[2]);
-  const m2 = s.match(/([a-z]+)\s+(\d+),?\s*(\d{4})/);
-  if (m2 && MONTHS[m2[1]] !== undefined) return new Date(+m2[3], MONTHS[m2[1]], +m2[2]);
-  return null;
-}
-
-function monthLabel(d) { return d ? d.toLocaleDateString('en-US',{month:'long',year:'numeric'}) : null; }
-function monthKey(d)   { return d ? `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}` : '9999-99'; }
-
-function modalityClass(m) {
-  const s = (m||'').toLowerCase().replace(/[^a-z]/g,'');
-  return s==='inperson' ? 'in-person' : s==='online' ? 'online' : 'hybrid';
-}
-function scholClass(s) {
-  const v=(s||'').toLowerCase();
-  return v==='yes'?'yes':v==='limited'?'limited':'no';
-}
-function cfpClass(c) { return (!c||c.toLowerCase()==='closed') ? 'closed' : 'open'; }
-
-function getFiltered() {
-  const q = document.getElementById('search').value.toLowerCase().trim();
-  const monthVal = document.getElementById('monthFilter').value;
-  const scholVal = document.getElementById('scholFilter').value;
-  return allData.filter(c => {
-    if (activeModality !== 'all' && modalityClass(c.modality) !== activeModality) return false;
-    if (activeTopic && !(c.topic||'').toLowerCase().includes(activeTopic.toLowerCase())) return false;
-    if (monthVal && monthKey(c._date) !== monthVal) return false;
-    if (scholVal && scholClass(c.scholarships) !== scholVal) return false;
-    if (q) {
-      const hay = [c.event,c.topic,c.location,c.modality,c.dates,c.cfp].join(' ').toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    return true;
-  });
-}
-
-function getSorted(data) {
-  return [...data].sort((a,b) => {
-    let av,bv;
-    if (sortKey==='date')     { av=a._date?a._date.getTime():Infinity; bv=b._date?b._date.getTime():Infinity; }
-    else if (sortKey==='name')     { av=(a.event||'').toLowerCase(); bv=(b.event||'').toLowerCase(); }
-    else if (sortKey==='location') { av=(a.location||'').toLowerCase(); bv=(b.location||'').toLowerCase(); }
-    if (av<bv) return sortDir==='asc'?-1:1;
-    if (av>bv) return sortDir==='asc'?1:-1;
-    return 0;
-  });
-}
-
-function render() {
-  const filtered = getSorted(getFiltered());
-  const grid = document.getElementById('grid');
-  document.getElementById('count').textContent = `${filtered.length} conference${filtered.length!==1?'s':''}`;
-  if (!filtered.length) { grid.innerHTML=''; document.getElementById('empty').style.display='block'; renderChips(); return; }
-  document.getElementById('empty').style.display='none';
-
-  const useHeaders = sortKey==='date';
-  let html='', lastMK=null;
-
-  filtered.forEach((c,i) => {
-    const mc = modalityClass(c.modality);
-    const sc = scholClass(c.scholarships);
-    const cc = cfpClass(c.cfp);
-    const cfpLabel = cc==='closed' ? 'Closed' : c.cfp;
-
-    if (useHeaders) {
-      const mk = monthKey(c._date);
-      if (mk !== lastMK) {
-        lastMK = mk;
-        const lbl = c._date ? monthLabel(c._date) : 'Date TBA';
-        html += `<div class="month-header"><h2>${lbl}</h2><div class="month-divider"></div></div>`;
-      }
-    }
-
-    html += `
-    <article class="card" style="animation-delay:${i*0.05}s">
-      <div class="card-stripe"></div>
-      <div class="card-body">
-        <div class="card-top">
-          <div>
-            <div class="card-topic">${c.topic||'Conference'}</div>
-            <div class="card-title">${c.event}</div>
-          </div>
-          <span class="mod-badge ${mc}">${c.modality}</span>
-        </div>
-        <div class="card-meta">
-          <div class="mi"><span class="ml">📍 Location</span><span class="mv">${c.location||'TBA'}</span></div>
-          <div class="mi"><span class="ml">📅 Event Dates</span><span class="mv ${!c.dates?'tba':''}">${c.dates||'TBA'}</span></div>
-          <div class="mi"><span class="ml">📝 Call for Proposals</span><span class="mv ${cc}">${cfpLabel}</span></div>
-          <div class="mi"><span class="ml">💰 Registration Fee</span><span class="mv">${c.fee||'TBA'}</span></div>
-        </div>
-        <div class="card-row">
-          <span class="ml" style="font-size:.68rem;margin-right:.1rem">🎓 Scholarships:</span>
-          <span class="schol-badge ${sc}">${c.scholarships||'N/A'}</span>
-        </div>
-      </div>
-      <div class="card-footer">
-        <a class="card-link" href="${c.link}" target="_blank" rel="noopener">
-          Visit conference website
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </article>`;
-  });
-
-  grid.innerHTML = html;
-  renderChips();
-}
-
-function renderChips() {
-  const af = document.getElementById('activeFilters');
-  const chips = [];
-  if (activeModality !== 'all') chips.push({ label:`Modality: ${activeModality}`, clear() { activeModality='all'; document.querySelectorAll('.mod-btn').forEach(b=>b.classList.remove('active')); document.querySelector('.mod-btn').classList.add('active'); render(); }});
-  if (activeTopic)              chips.push({ label:`Topic: ${activeTopic}`,       clear() { activeTopic=null; document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active')); render(); }});
-  const mf=document.getElementById('monthFilter');
-  if (mf.value)                chips.push({ label:`Month: ${mf.options[mf.selectedIndex].text}`, clear() { mf.value=''; render(); }});
-  const sf=document.getElementById('scholFilter');
-  if (sf.value)                chips.push({ label:`Scholarships: ${sf.options[sf.selectedIndex].text}`, clear() { sf.value=''; render(); }});
-  af.innerHTML = chips.map((_,i)=>`<span class="af-chip">${chips[i].label}<button onclick="clearChip(${i})">✕</button></span>`).join('');
-  af._chips = chips;
-}
-
-function clearChip(i) { document.getElementById('activeFilters')._chips[i].clear(); }
-
-function setModality(btn, val) {
-  activeModality = val;
-  document.querySelectorAll('.mod-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  render();
-}
-
-function filterTopic(btn, topic) {
-  if (activeTopic === topic) { activeTopic=null; btn.classList.remove('active'); }
-  else { activeTopic=topic; document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active')); btn.classList.add('active'); }
-  render();
-}
-
-function setSort(key, btn) {
-  sortDir = (sortKey===key && sortDir==='asc') ? 'desc' : 'asc';
-  sortKey = key;
-  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active','asc','desc'));
-  btn.classList.add('active', sortDir);
-  render();
-}
-
-function populateMonths(data) {
-  const seen = new Map();
-  [...data].filter(c=>c._date).sort((a,b)=>a._date-b._date)
-    .forEach(c=>{ const k=monthKey(c._date); if(!seen.has(k)) seen.set(k,monthLabel(c._date)); });
-  const sel = document.getElementById('monthFilter');
-  seen.forEach((label,key)=>{ const o=document.createElement('option'); o.value=key; o.textContent=label; sel.appendChild(o); });
-}
-
-async function init() {
-  try {
-    const res = await fetch('conferences.json');
-    allData = await res.json();
-  } catch {
-    allData = [
-      {event:"NAFSA 2027 Annual Conference & Expo",topic:"International Education",location:"Los Angeles, CA, USA",modality:"In-person",dates:"June 1-4, 2027",cfp:"August 26, 2026",fee:"$$$",scholarships:"Yes",link:"https://www.nafsa.org/2027/cfp"},
-      {event:"EAIE Conference 2026",topic:"International Education",location:"Glasgow, UK",modality:"In-person",dates:"Sept 8-11, 2026",cfp:"Closed",fee:"€719 - €1079",scholarships:"Limited",link:"https://www.eaie.org/events/glasgow.html"},
-      {event:"IVEC Conference",topic:"Virtual Exchange",location:"Varies",modality:"Hybrid",dates:"October 26-29, 2026",cfp:"Closed",fee:"$50 - $285",scholarships:"Yes",link:"https://iveconference.org/"},
-      {event:"FAUBAI Conference 2026",topic:"International Education",location:"Florianópolis, Brazil",modality:"In-person",dates:"April 12-15, 2026",cfp:"August 4 - October 31",fee:"$399 - $599",scholarships:"Limited",link:"https://faubai.org.br/conf/2026/"},
-      {event:"AAC&U Global Learning Conference",topic:"Global Learning",location:"USA",modality:"Hybrid",dates:"November 12-14, 2026",cfp:"Closed",fee:"$175 - $800",scholarships:"Yes",link:"https://www.aacu.org/event/2026-conference-on-global-learning"},
-      {event:"ANGEL Conference",topic:"Global Learning/Intercultural Education",location:"Bologna, Italy",modality:"In-Person",dates:"September 10-11, 2026",cfp:"Closed",fee:"£180 - £300",scholarships:"No",link:"https://angel-network.net/ANGELConference2026_Call"}
-    ];
-  }
-  allData.forEach(c => c._date = parseEventDate(c.dates));
-  populateMonths(allData);
-  render();
-}
-
-init();
-</script>
 </body>
 </html>

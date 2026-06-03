@@ -1,164 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gabriela Méndez | COIL & Virtual Exchange</title>
-
-  <!-- Google Font: Manrope -->
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Manrope', sans-serif;
-      background: #f9fafb;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #92d3cd, #9e92d9);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .profile {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .profile img {
-      width: 220px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .profile-text {
-      flex: 1;
-    }
-
-    h2 {
-      margin-top: 50px;
-      color: #4ea46c;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    .links a {
-      display: block;
-      margin: 10px 0;
-      text-decoration: none;
-      color: #ff653a;
-      font-weight: 600;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin: 60px 0 20px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Gabriela Méndez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header>
   <h1>Gabriela Méndez</h1>
-  <p>COIL & Virtual Exchange Consultant | Global Learning Advocate</p>
+  <p class="subtitle">COIL & Virtual Exchange Consultant | Global Learning Advocate</p>
 </header>
 
-<div class="container">
+<section class="hero">
+  <img src="images/gabrielamendez.jpeg" alt="Gabriela Méndez">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Gabriela Méndez—educator, COIL & Virtual Exchange consultant, and global learning advocate. 
+      With a Master’s in IT Management and 15+ years of experience, I focus on online education, 
+      intercultural collaboration, and faculty development. I’ve led COIL VE initiatives at 
+      Tecnológico de Monterrey, Florida International University, and the University of Minnesota, 
+      and worked with partners across the Americas, Europe, Asia, and Africa. I enjoy designing bilingual 
+      workshops and supporting projects that blend EdTech, inclusive pedagogy, and intercultural learning. 
+      Passionate about building meaningful global connections—let’s connect and explore new ways to collaborate!
+    </p>
+  </div>
+</section>
 
-  <!-- Profile Section -->
-  <section class="profile">
-    <img src="GabrielaMendez.jpg" alt="Gabriela Méndez">
+<section>
+  <h2>Contributions</h2>
+  <ul>
+    <li>COIL & Virtual Exchange program design</li>
+    <li>Faculty development and global learning training</li>
+    <li>International partnerships across regions</li>
+    <li>Bilingual workshops and facilitation</li>
+    <li>EdTech + inclusive pedagogy integration</li>
+  </ul>
+</section>
 
-    <div class="profile-text">
-      <h2>About Me</h2>
-      <p>
-        Hi, I’m Gabriela Méndez—educator, COIL & Virtual Exchange consultant, and global learning advocate.
-        With a Master’s in IT Management and 15+ years of experience, I focus on online education,
-        intercultural collaboration, and faculty development.
-      </p>
-      <p>
-        I’ve led COIL VE initiatives at Tecnológico de Monterrey, Florida International University,
-        and the University of Minnesota, and worked with partners across the Americas, Europe,
-        Asia, and Africa.
-      </p>
-      <p>
-        I enjoy designing bilingual workshops and supporting projects that blend EdTech,
-        inclusive pedagogy, and intercultural learning.
-      </p>
-      <p>
-        Passionate about building meaningful global connections—let’s connect and explore
-        new ways to collaborate!
-      </p>
-    </div>
-  </section>
-
-  <!-- Contributions -->
-  <section>
-    <h2>Contributions</h2>
-
-    <div class="card">
-      <ul>
-        <li>Design and facilitation of COIL & Virtual Exchange programs</li>
-        <li>Faculty training in global and intercultural learning</li>
-        <li>Development of digital collaboration strategies</li>
-        <li>Integration of inclusive and accessible EdTech tools</li>
-        <li>Support for international academic partnerships</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Resources -->
-  <section>
-    <h2>Resources & Links</h2>
-
-    <div class="card links">
-      <a href="conference-tracker.html">📊 Conference Tracker</a>
-      <a href="Language Acknowledgment.pdf" target="_blank">🌍 Language Acknowledgment</a>
-      <a href="How to Choose and Use Technology Tools for COIL with Data Privacy and Data Protection in Mind(1).pdf" target="_blank">
-        🔐 COIL Technology & Data Privacy Guide
-      </a>
-    </div>
-  </section>
-
-</div>
+<section class="links">
+  <h2>Resources</h2>
+  <ul>
+    <li><a href="conferences.html">Conference Tracker</a></li>
+    <li><a href="language.html">Language Acknowledgement</a></li>
+    <li><a href="guide.html">COIL Technology Guide</a></li>
+  </ul>
+</section>
 
 <footer>
-  © 2026 Gabriela Méndez
+  <p>© 2026 Gabriela Méndez</p>
 </footer>
 
 </body>

@@ -35,7 +35,7 @@
   {
     "event": "FAUBAI Conference 2026",
     "topic": "International Education",
-    "location": "Brazil",
+    "location": "Florianópolis, Brazil",
     "modality": "In-person",
     "dates": "April 12 – 15, 2026",
     "cfp": "August 4 – October 31",
@@ -48,21 +48,21 @@
     "topic": "Global Learning",
     "location": "USA",
     "modality": "Hybrid",
-    "dates": "TBD",
-    "cfp": "Yes",
-    "fee": "$$",
+    "dates": "November 12-14,2026",
+    "cfp": "Closed",
+    "fee": "$175 - $800",
     "scholarships": "Yes",
     "link": "https://www.aacu.org/event/2026-conference-on-global-learning"
   },
   {
     "event": "ANGEL Conference",
-    "topic": "Virtual Exchange / COIL",
-    "location": "Online",
-    "modality": "Online",
-    "dates": "TBD",
-    "cfp": "Yes",
-    "fee": "$",
-    "scholarships": "Yes",
+    "topic": "Global Learning/Intercultural Education",
+    "location": "Bologna, Italy",
+    "modality": "In-Person",
+    "dates": "September 10-11, 2026",
+    "cfp": "Closed",
+    "fee": "£180 - £300",
+    "scholarships": "No",
     "link": "https://angel-network.net/ANGELConference2026_Call"
   }
 ]

@@ -33,8 +33,6 @@
 </head>
 <body>
 
-<h1>International Education Conferences</h1>
-
 <input type="text" id="search" placeholder="Search events...">
 <select id="topicFilter">
   <option value="">All Topics</option>
@@ -106,6 +104,7 @@ function renderTable() {
         <td>${d.topic}</td>
         <td>${d.location}</td>
         <td>${d.modality}</td>
+        <td>${d.month}</td>
         <td>${d.dates}</td>
         <td>${d.cfp}</td>
         <td>${d.fee}</td>

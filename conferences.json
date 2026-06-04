@@ -36,6 +36,18 @@
     "link": "https://www.eaie.org/events/glasgow.html"
   },
   {
+    "event": "ANGEL Conference",
+    "topic": "Global Learning / Intercultural Education",
+    "location": "Bologna, Italy",
+    "modality": "In-person",
+    "month": "September",
+    "dates": "September 10-11, 2026",
+    "cfp": "CLOSED",
+    "fee": "£180 - £300",
+    "scholarships": "No",
+    "link": "https://angel-network.net/ANGELConference2026_Call"
+  },
+  {
     "event": "AAC&U Global Learning Conference - Virtual Conference Online",
     "topic": "Global Learning",
     "location": "Washington, DC, USA",
@@ -70,17 +82,5 @@
     "fee": "$175 - $800",
     "scholarships": "No",
     "link": "https://www.aacu.org/event/2026-conference-on-global-learning"
-  },
-  {
-    "event": "ANGEL Conference",
-    "topic": "Global Learning / Intercultural Education",
-    "location": "Bologna, Italy",
-    "modality": "In-person",
-    "month": "September",
-    "dates": "September 10-11, 2026",
-    "cfp": "CLOSED",
-    "fee": "£180 - £300",
-    "scholarships": "No",
-    "link": "https://angel-network.net/ANGELConference2026_Call"
   }
 ]

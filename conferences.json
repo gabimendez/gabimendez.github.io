@@ -71,6 +71,18 @@
     "scholarships": "Yes",
     "link": "https://iveconference.org/"
   },
+   {
+    "event": "Congreso de las Américas sobre Educación Internacional (CAEI)",
+    "topic": "International Education",
+    "location": "Guadalajara, Jalisco, México",
+    "modality": "In-person",
+    "month": "October",
+    "dates": "October 27-29, 2026",
+    "cfp": "CLOSED",
+    "fee": "TBD",
+    "scholarships": "No",
+    "link": "https://caie-caei.org/"
+  },
   {
     "event": "AAC&U Global Learning Conference",
     "topic": "Global Learning",

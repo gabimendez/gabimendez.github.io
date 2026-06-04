@@ -39,6 +39,7 @@
 </select>
 <select id="modalityFilter">
   <option value="">All Modalities</option>
+</select>
 
 <table id="table">
   <thead>
@@ -46,8 +47,7 @@
       <th>Event</th>
       <th>Topic</th>
       <th>Location</th>
-      <th>Modality</th>      
-      <th>Month</th>
+      <th>Modality</th>
       <th>Dates</th>
       <th>CFP</th>
       <th>Fee</th>
@@ -90,7 +90,7 @@ function renderTable() {
   const filtered = data.filter(d =>
     (!search || d.event.toLowerCase().includes(search)) &&
     (!topic || d.topic === topic) &&
-    (!modality || d.modality === modality) &&
+    (!modality || d.modality === modality)
   );
 
   const tbody = document.querySelector('#table tbody');
@@ -102,7 +102,7 @@ function renderTable() {
         <td>${d.event}</td>
         <td>${d.topic}</td>
         <td>${d.location}</td>
-        <td>${d.modality}</td>        
+        <td>${d.modality}</td>
         <td>${d.dates}</td>
         <td>${d.cfp}</td>
         <td>${d.fee}</td>
@@ -116,7 +116,6 @@ function renderTable() {
 document.getElementById('search').addEventListener('input', renderTable);
 document.getElementById('topicFilter').addEventListener('change', renderTable);
 document.getElementById('modalityFilter').addEventListener('change', renderTable);
-
 </script>
   <p>Note: Some dates currently listed are approximate, as official details for upcoming editions have not yet been announced—please double-check conference websites for confirmation. In some cases, submission deadlines may appear as closed based on the current timeline; these will be updated as new cycles are released.</p>
 

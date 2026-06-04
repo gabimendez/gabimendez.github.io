@@ -20,7 +20,11 @@
   <p>You are invited to explore the tracker, use it as a planning resource, and contribute by suggesting additional conferences or sharing feedback to help keep it relevant and useful for the community.</p>
  
 <head>
+  <!DOCTYPE html>
+<html>
+<head>
   <meta charset="UTF-8">
+  <title>International Education Conferences</title>
   <style>
     body { font-family: Arial; margin: 40px; }
     h1 { margin-bottom: 10px; }
@@ -32,6 +36,8 @@
   </style>
 </head>
 <body>
+
+<h1>International Education Conferences</h1>
 
 <input type="text" id="search" placeholder="Search events...">
 <select id="topicFilter">
@@ -48,7 +54,6 @@
       <th>Topic</th>
       <th>Location</th>
       <th>Modality</th>
-      <th>Month</th>
       <th>Dates</th>
       <th>CFP</th>
       <th>Fee</th>
@@ -118,9 +123,8 @@ document.getElementById('search').addEventListener('input', renderTable);
 document.getElementById('topicFilter').addEventListener('change', renderTable);
 document.getElementById('modalityFilter').addEventListener('change', renderTable);
 </script>
-  <p>Note: Some dates currently listed are approximate, as official details for upcoming editions have not yet been announced—please double-check conference websites for confirmation. In some cases, submission deadlines may appear as closed based on the current timeline; these will be updated as new cycles are released.</p>
 
-  </section>
+</section>
 <section class="links">
   <h2>My Contributions</h2>
   <ul>

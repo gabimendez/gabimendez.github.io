@@ -46,7 +46,7 @@ h2 {
 .hero img {
   width: 220px;
   border-radius: 50%;
-  border: 6px solid #acd7e9;
+  border: 6px solid #f59eb6;
 }
 
 /* LISTS */
@@ -78,5 +78,5 @@ section::before {
 footer {
   text-align: center;
   padding: 20px;
-  background: #acd7e9;
+  background: #f59eb6;
 }

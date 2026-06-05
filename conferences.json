@@ -6,9 +6,21 @@
     "modality": "Hybrid",
     "month": "January",
     "dates": "January 26-28, 2027",
-    "cfp": " June 15, 2026",
+    "cfp": "June 15, 2026",
     "fee": "TBD",
     "scholarships": "Limited",
+    "link": "https://ifeconference.tec.mx/en-US/"
+  },
+   {
+    "event": "AIEA 2027 Annual Conference",
+    "topic": "Global Education, International Education",
+    "location": "Washington, DC, USA",
+    "modality": "In-person",
+    "month": "February",
+    "dates": "February 15-18, 2027",
+    "cfp": "CLOSED",
+    "fee": "TBD",
+    "scholarships": "No",
     "link": "https://ifeconference.tec.mx/en-US/"
   },
    {
@@ -49,7 +61,7 @@
   },
    {
     "event": "6.º Congreso de la Red Latinoamericana COIL",
-    "topic": "COIL / Virtual Exchange",
+    "topic": "COIL, Virtual Exchange",
     "location": "Online",
     "modality": "Online",
     "month": "September",
@@ -73,7 +85,7 @@
   },
   {
     "event": "ANGEL Conference",
-    "topic": "Global Learning / Intercultural Education",
+    "topic": "Global Learning, Intercultural Education",
     "location": "Bologna, Italy",
     "modality": "In-person",
     "month": "September",
@@ -133,7 +145,7 @@
   },
    {
     "event": "COILectiVE NL Symposium",
-    "topic": "COIL / Virtual Exchange",
+    "topic": "COIL, Virtual Exchange",
     "location": "The Hague, The Netherlands",
     "modality": "In-person",
     "month": "November",

@@ -130,5 +130,17 @@
     "fee": "$175 - $800",
     "scholarships": "No",
     "link": "https://www.aacu.org/event/2026-conference-on-global-learning"
+  },
+   {
+    "event": "COILectiVE NL Symposium",
+    "topic": "Global Learning",
+    "location": "The Hague, The Netherlands",
+    "modality": "In-person",
+    "month": "November",
+    "dates": "November 25-27, 2026",
+    "cfp": "CLOSED",
+    "fee": "FREE",
+    "scholarships": "No",
+    "link": "https://www.nuffic.nl/agenda/coilective-nl-symposium"
   }
 ]

@@ -40,8 +40,9 @@
 </select>
 <select id="modalityFilter">
   <option value="">All Modalities</option>
-  </select><select id="yearFilter">
-  <option value="">All Years</option>
+  </select>
+  <select id="yearFilter">
+  <option value="">All Time</option>
 </select>
 </select><select id="monthFilter">
   <option value="">All Year</option>
@@ -140,8 +141,7 @@ function renderTable() {
 document.getElementById('search').addEventListener('input', renderTable);
 document.getElementById('topicFilter').addEventListener('change', renderTable);
 document.getElementById('modalityFilter').addEventListener('change', renderTable);
-  document.getElementById('yearFilter').addEventListener('change', renderTable);
-
+document.getElementById('yearFilter').addEventListener('change', renderTable);
 document.getElementById('monthFilter').addEventListener('change', renderTable);
 
 </script>

@@ -1,167 +1,838 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Gabriela Méndez</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conference Tracker by Gabriela Méndez — a resource for exploring conferences in international education, global learning, COIL, virtual exchange, and teaching and learning.">
+
+    <title>Conference Tracker | Gabriela Méndez</title>
+
+    <!-- Portfolio fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Main portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
-<body>
 
-<header>
-  <h1>Gabriela Méndez</h1>
-  <p class="subtitle">Global Learning Advocate | COIL Virtual Exchange Leader | Program Designer | EdTech Professional | Faculty Development Specialist | Inspiring Educator</p>
-</header>
-<section>  
-  <h2>Conference Tracker</h2>
-  <p>The Conference Tracker is a resource designed to support faculty, administrators, and staff by providing a quick overview of selected conferences from around the world. It brings together key information such as conference modality (virtual, in-person, or hybrid), location, important dates, and potential fees, making it easier to explore opportunities at a glance.</p>
-  <p>The tracker focuses on conferences related to International Education, Global Learning, Collaborative Online International Learning (COIL), Virtual Exchange, Teaching and Learning, and other closely connected areas. These events play an important role in fostering collaboration, innovation, and the internationalization of education .</p>
-  <p>You are invited to explore the tracker, use it as a planning resource, and contribute by suggesting additional conferences or sharing feedback to help keep it relevant and useful for the community.</p>
- 
-<head>
-  <meta charset="UTF-8">
-  <style>
-    body { font-family: Arial; margin: 40px; }
-    h1 { margin-bottom: 10px; }
-    input, select { margin: 10px 5px 20px 0; padding: 6px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ddd; padding: 8px; }
-    th { background: #f4f4f4; }
-    tr:hover { background: #f9f9f9; }
-  </style>
-</head>
-<body>
-
-<input type="text" id="search" placeholder="Search events...">
-<select id="topicFilter">
-  <option value="">All Topics</option>
-</select>
-<select id="modalityFilter">
-  <option value="">All Modalities</option>
-  </select>
-  <select id="yearFilter">
-  <option value="">All Time</option>
-</select>
-</select><select id="monthFilter">
-  <option value="">All Year</option>
-</select>
-
-<table id="table">
-  <thead>
-    <tr>
-      <th>Event</th>
-      <th>Topic</th>
-      <th>Location</th>
-      <th>Modality</th>
-      <th>Dates</th>
-      <th>CFP</th>
-      <th>Fee</th>
-      <th>Scholarships</th>
-      <th>Link</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<script>
-let data = [];
-
-fetch('conferences.json')
-  .then(res => res.json())
-  .then(json => {
-    data = json;
-    populateFilters();
-    renderTable();
-  });
-
-function populateFilters() {
-  const topics = [...new Set(data.map(d => d.topic))];
-  const modalities = [...new Set(data.map(d => d.modality))];
-  const years = [...new Set(data.map(d => d.year))];
-  const months = [...new Set(data.map(d => d.month))];
+<body class="resource-page">
 
 
-  topics.forEach(t => {
-    topicFilter.innerHTML += `<option value="${t}">${t}</option>`;
-  });
+    <!-- =====================================
+         HEADER
+    ====================================== -->
 
-  modalities.forEach(m => {
-    modalityFilter.innerHTML += `<option value="${m}">${m}</option>`;
-  });  
-  years.forEach(m => {
-    yearFilter.innerHTML += `<option value="${m}">${m}</option>`;
-  });
-  months.forEach(m => {
-    monthFilter.innerHTML += `<option value="${m}">${m}</option>`;
-  });
-}
+    <header class="site-header">
 
-function renderTable() {
-  const search = document.getElementById('search').value.toLowerCase();
-  const topic = document.getElementById('topicFilter').value;
-  const modality = document.getElementById('modalityFilter').value;
-  const year = document.getElementById('yearFilter').value;
-  const month = document.getElementById('monthFilter').value;
+        <a href="index.html" class="logo">
+            GABI<span>.</span>
+        </a>
+
+        <nav class="navigation">
+
+            <a href="index.html#work">WORK</a>
+
+            <a href="index.html#about">ABOUT</a>
+
+            <a href="index.html#recognition">RECOGNITION</a>
+
+            <a href="index.html#contact">CONTACT</a>
+
+        </nav>
+
+        <button class="menu-toggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+    </header>
 
 
-  const filtered = data.filter(d =>
-    (!search || d.event.toLowerCase().includes(search)) &&
-    (!topic || d.topic === topic) &&
-    (!modality || d.modality === modality) &&
-    (!year || d.year === year) &&
-    (!month || d.month === month)
 
-  );
+    <!-- =====================================
+         MAIN
+    ====================================== -->
 
-  const tbody = document.querySelector('#table tbody');
-  tbody.innerHTML = '';
+    <main>
 
-  filtered.forEach(d => {
-    tbody.innerHTML += `
-      <tr>
-        <td>${d.event}</td>
-        <td>${d.topic}</td>
-        <td>${d.location}</td>
-        <td>${d.modality}</td>
-        <td>${d.dates}</td>
-        <td>${d.cfp}</td>
-        <td>${d.fee}</td>
-        <td>${d.scholarships}</td>
-        <td><a href="${d.link}" target="_blank">Info</a></td>
-      </tr>
-    `;
-  });
-}
 
-document.getElementById('search').addEventListener('input', renderTable);
-document.getElementById('topicFilter').addEventListener('change', renderTable);
-document.getElementById('modalityFilter').addEventListener('change', renderTable);
-document.getElementById('yearFilter').addEventListener('change', renderTable);
-document.getElementById('monthFilter').addEventListener('change', renderTable);
+        <!-- =====================================
+             RESOURCE HERO
+        ====================================== -->
 
-</script>
-  <p>Note: Some dates currently listed are approximate, as official details for upcoming editions have not yet been announced—please double-check conference websites for confirmation. In some cases, submission deadlines may appear as closed based on the current timeline; these will be updated as new cycles are released.</p>
+        <section class="resource-hero">
 
-  </section>
- <section class="links">
-  <h2>My Contributions</h2>
-  <div style="background:#f3f6fa; border-left:4px solid #acd7e9; padding:16px 20px; border-radius:4px; margin-bottom:1.5em;">
-  <p>Here are some resources I’ve developed to support educators and practitioners in global learning, virtual exchange, and intercultural collaboration. Click on each link to learn more about each resource:</p>
-  <ul>
-    <li><a href="conferencetracker.html">Conference Tracker</a></li>
-    <li><a href="language.html">Language Acknowledgement</a></li>
-    <li><a href="guide.html">Guide: How to Choose and Use Technology Tools for COIL with Data Privacy and Data</a></li>
-</a></li>
-  </ul>
-</div>
-    <!-- Back Button -->
-      <a href="index.html" class="back-btn"><h2><strong>← About Me</strong></h2></a>
-</section>
+            <div class="resource-hero-inner">
 
-<footer>
-  <p>© 2026 Gabriela Méndez</p>
-</footer>
+                <div class="section-label">
+                    SELECTED WORK · 01
+                </div>
+
+                <p class="handwritten">
+                    a resource for global learning
+                </p>
+
+                <h1>
+                    CONFERENCE<br>
+                    <span>TRACKER.</span>
+                </h1>
+
+                <p class="resource-intro">
+
+                    A resource designed to help educators and practitioners
+                    explore conferences related to international education,
+                    global learning, COIL, virtual exchange, teaching and
+                    learning, and related fields.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ABOUT THE RESOURCE
+        ====================================== -->
+
+        <section class="resource-description">
+
+            <div class="resource-description-label">
+
+                <span>01</span>
+
+                ABOUT<br>
+                THE<br>
+                RESOURCE
+
+            </div>
+
+
+            <div class="resource-description-content">
+
+                <p>
+                    The Conference Tracker is a resource designed to support
+                    faculty, administrators, and staff by providing a quick
+                    overview of selected conferences from around the world.
+                </p>
+
+                <p>
+                    It brings together key information such as conference
+                    modality, location, important dates, and potential fees,
+                    making it easier to explore opportunities at a glance.
+                </p>
+
+                <p>
+                    The tracker focuses on conferences related to
+                    <strong>International Education, Global Learning,
+                    Collaborative Online International Learning (COIL),
+                    Virtual Exchange, Teaching and Learning</strong>, and
+                    other closely connected areas.
+                </p>
+
+                <p>
+                    These events play an important role in fostering
+                    collaboration, innovation, and the internationalization
+                    of education.
+                </p>
+
+                <div class="resource-note">
+
+                    <strong>WHY IT MATTERS</strong>
+
+                    <p>
+                        Conferences can be valuable spaces for discovering
+                        ideas, building partnerships, sharing practice, and
+                        staying connected with communities working across
+                        borders.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             TRACKER
+        ====================================== -->
+
+        <section class="tracker-section">
+
+            <div class="tracker-heading">
+
+                <div class="section-label">
+                    02 · EXPLORE
+                </div>
+
+                <h2>
+                    FIND YOUR<br>
+                    <span>NEXT CONNECTION.</span>
+                </h2>
+
+                <p>
+                    Search and filter the conferences below by topic,
+                    modality, year, or month.
+                </p>
+
+            </div>
+
+
+
+            <!-- FILTERS -->
+
+            <div class="tracker-filters">
+
+                <div class="filter-group search-group">
+
+                    <label for="search">
+                        SEARCH
+                    </label>
+
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Search events...">
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="topicFilter">
+                        TOPIC
+                    </label>
+
+                    <select id="topicFilter">
+
+                        <option value="">
+                            All Topics
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="modalityFilter">
+                        MODALITY
+                    </label>
+
+                    <select id="modalityFilter">
+
+                        <option value="">
+                            All Modalities
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="yearFilter">
+                        YEAR
+                    </label>
+
+                    <select id="yearFilter">
+
+                        <option value="">
+                            All Years
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="monthFilter">
+                        MONTH
+                    </label>
+
+                    <select id="monthFilter">
+
+                        <option value="">
+                            All Months
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TABLE -->
+
+            <div class="table-wrapper">
+
+                <table id="table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Event</th>
+
+                            <th>Topic</th>
+
+                            <th>Location</th>
+
+                            <th>Modality</th>
+
+                            <th>Dates</th>
+
+                            <th>CFP</th>
+
+                            <th>Fee</th>
+
+                            <th>Scholarships</th>
+
+                            <th>Link</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody></tbody>
+
+                </table>
+
+            </div>
+
+
+            <p class="tracker-disclaimer">
+
+                <strong>PLEASE NOTE:</strong>
+                Some dates currently listed are approximate, as official
+                details for upcoming editions have not yet been announced.
+                Please double-check conference websites for confirmation.
+                In some cases, submission deadlines may appear as closed
+                based on the current timeline; these will be updated as
+                new cycles are released.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CONTRIBUTIONS
+        ====================================== -->
+
+        <section class="other-work">
+
+            <div class="section-label">
+                03 · MORE RESOURCES
+            </div>
+
+            <h2>
+                EXPLORE<br>
+                <span>MORE WORK.</span>
+            </h2>
+
+
+            <div class="other-work-list">
+
+
+                <a href="conferencetracker.html"
+                    class="other-work-item current">
+
+                    <span class="other-work-number">
+                        01
+                    </span>
+
+                    <span>
+                        Conference Tracker
+                    </span>
+
+                    <span>
+                        CURRENT
+                    </span>
+
+                </a>
+
+
+                <a href="language.html"
+                    class="other-work-item">
+
+                    <span class="other-work-number">
+                        02
+                    </span>
+
+                    <span>
+                        Language Acknowledgement
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <a href="guide.html"
+                    class="other-work-item">
+
+                    <span class="other-work-number">
+                        03
+                    </span>
+
+                    <span>
+                        Technology Tools for COIL:
+                        Data Privacy Guide
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             BACK TO PORTFOLIO
+        ====================================== -->
+
+        <section class="resource-back">
+
+            <a href="index.html">
+
+                ← BACK TO PORTFOLIO
+
+            </a>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                GABRIELA MÉNDEZ
+            </strong>
+
+            <span>
+                Mexico · Working globally
+            </span>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener">
+                LinkedIn
+            </a>
+
+            <a href="mailto:your-email@example.com">
+                Email
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================
+         CONFERENCE TRACKER SCRIPT
+    ====================================== -->
+
+    <script>
+
+        let data = [];
+
+
+        /*
+         * Load conference data
+         */
+
+        fetch('conferences.json')
+
+            .then(res => res.json())
+
+            .then(json => {
+
+                data = json;
+
+                populateFilters();
+
+                renderTable();
+
+            })
+
+            .catch(error => {
+
+                console.error(
+                    "Unable to load conferences.json:",
+                    error
+                );
+
+            });
+
+
+
+        /*
+         * Populate dropdown filters
+         */
+
+        function populateFilters() {
+
+            const topics = [
+                ...new Set(
+                    data
+                        .map(d => d.topic)
+                        .filter(Boolean)
+                )
+            ].sort();
+
+
+            const modalities = [
+                ...new Set(
+                    data
+                        .map(d => d.modality)
+                        .filter(Boolean)
+                )
+            ].sort();
+
+
+            const years = [
+                ...new Set(
+                    data
+                        .map(d => d.year)
+                        .filter(Boolean)
+                )
+            ].sort((a, b) => b - a);
+
+
+            const months = [
+                ...new Set(
+                    data
+                        .map(d => d.month)
+                        .filter(Boolean)
+                )
+            ];
+
+
+            const topicFilter =
+                document.getElementById("topicFilter");
+
+            const modalityFilter =
+                document.getElementById("modalityFilter");
+
+            const yearFilter =
+                document.getElementById("yearFilter");
+
+            const monthFilter =
+                document.getElementById("monthFilter");
+
+
+            topics.forEach(topic => {
+
+                topicFilter.innerHTML += `
+                    <option value="${topic}">
+                        ${topic}
+                    </option>
+                `;
+
+            });
+
+
+            modalities.forEach(modality => {
+
+                modalityFilter.innerHTML += `
+                    <option value="${modality}">
+                        ${modality}
+                    </option>
+                `;
+
+            });
+
+
+            years.forEach(year => {
+
+                yearFilter.innerHTML += `
+                    <option value="${year}">
+                        ${year}
+                    </option>
+                `;
+
+            });
+
+
+            months.forEach(month => {
+
+                monthFilter.innerHTML += `
+                    <option value="${month}">
+                        ${month}
+                    </option>
+                `;
+
+            });
+
+        }
+
+
+
+        /*
+         * Render conference table
+         */
+
+        function renderTable() {
+
+            const search =
+                document
+                    .getElementById("search")
+                    .value
+                    .toLowerCase();
+
+
+            const topic =
+                document
+                    .getElementById("topicFilter")
+                    .value;
+
+
+            const modality =
+                document
+                    .getElementById("modalityFilter")
+                    .value;
+
+
+            const year =
+                document
+                    .getElementById("yearFilter")
+                    .value;
+
+
+            const month =
+                document
+                    .getElementById("monthFilter")
+                    .value;
+
+
+
+            const filtered = data.filter(d =>
+
+                (
+                    !search ||
+                    String(d.event)
+                        .toLowerCase()
+                        .includes(search)
+                )
+
+                &&
+
+                (
+                    !topic ||
+                    String(d.topic) === topic
+                )
+
+                &&
+
+                (
+                    !modality ||
+                    String(d.modality) === modality
+                )
+
+                &&
+
+                (
+                    !year ||
+                    String(d.year) === year
+                )
+
+                &&
+
+                (
+                    !month ||
+                    String(d.month) === month
+                )
+
+            );
+
+
+
+            const tbody =
+                document.querySelector(
+                    "#table tbody"
+                );
+
+
+            tbody.innerHTML = "";
+
+
+
+            if (filtered.length === 0) {
+
+                tbody.innerHTML = `
+                    <tr>
+                        <td
+                            colspan="9"
+                            class="no-results">
+                            No conferences found.
+                            Try changing your filters.
+                        </td>
+                    </tr>
+                `;
+
+                return;
+
+            }
+
+
+
+            filtered.forEach(d => {
+
+                tbody.innerHTML += `
+
+                    <tr>
+
+                        <td class="event-name">
+                            ${d.event || ""}
+                        </td>
+
+                        <td>
+                            ${d.topic || ""}
+                        </td>
+
+                        <td>
+                            ${d.location || ""}
+                        </td>
+
+                        <td>
+                            ${d.modality || ""}
+                        </td>
+
+                        <td>
+                            ${d.dates || ""}
+                        </td>
+
+                        <td>
+                            ${d.cfp || ""}
+                        </td>
+
+                        <td>
+                            ${d.fee || ""}
+                        </td>
+
+                        <td>
+                            ${d.scholarships || ""}
+                        </td>
+
+                        <td>
+
+                            ${
+                                d.link
+                                ?
+                                `<a
+                                    href="${d.link}"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="table-link">
+                                    INFO ↗
+                                </a>`
+                                :
+                                "—"
+                            }
+
+                        </td>
+
+                    </tr>
+
+                `;
+
+            });
+
+        }
+
+
+
+        /*
+         * Filter listeners
+         */
+
+        document
+            .getElementById("search")
+            .addEventListener(
+                "input",
+                renderTable
+            );
+
+
+        document
+            .getElementById("topicFilter")
+            .addEventListener(
+                "change",
+                renderTable
+            );
+
+
+        document
+            .getElementById("modalityFilter")
+            .addEventListener(
+                "change",
+                renderTable
+            );
+
+
+        document
+            .getElementById("yearFilter")
+            .addEventListener(
+                "change",
+                renderTable
+            );
+
+
+        document
+            .getElementById("monthFilter")
+            .addEventListener(
+                "change",
+                renderTable
+            );
+
+    </script>
+
+
 </body>
+
 </html>

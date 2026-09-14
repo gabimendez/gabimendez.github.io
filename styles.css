@@ -1288,3 +1288,734 @@ p {
     }
 
 }
+/* =====================================================
+   RESOURCE PAGES
+   Conference Tracker + Future Portfolio Resources
+===================================================== */
+
+
+/* =====================================================
+   RESOURCE HERO
+===================================================== */
+
+.resource-hero {
+
+    background: var(--warm-white);
+
+    padding: 8rem 6vw 7rem;
+
+    border-bottom: 3px solid var(--black);
+
+}
+
+
+.resource-hero-inner {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+.resource-hero .section-label {
+
+    margin-bottom: 3rem;
+
+}
+
+
+.resource-hero .handwritten {
+
+    margin-bottom: 1rem;
+
+}
+
+
+.resource-hero h1 {
+
+    max-width: 1100px;
+
+    margin-bottom: 3rem;
+
+}
+
+
+.resource-hero h1 span {
+
+    color: var(--pink);
+
+}
+
+
+.resource-intro {
+
+    max-width: 700px;
+
+    font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   RESOURCE DESCRIPTION
+===================================================== */
+
+.resource-description {
+
+    display: grid;
+
+    grid-template-columns: 25% 75%;
+
+    gap: 5vw;
+
+    padding: 7rem 6vw;
+
+    background: var(--black);
+
+    color: var(--white);
+
+}
+
+
+.resource-description-label {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    line-height: 1.5;
+
+}
+
+
+.resource-description-label span {
+
+    display: block;
+
+    margin-bottom: 1.5rem;
+
+    color: var(--pink);
+
+    font-size: 1rem;
+
+}
+
+
+.resource-description-content {
+
+    max-width: 850px;
+
+}
+
+
+.resource-description-content > p {
+
+    margin-bottom: 2rem;
+
+    font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+
+    color: #e5e5e5;
+
+}
+
+
+.resource-description-content strong {
+
+    color: var(--pink);
+
+}
+
+
+.resource-note {
+
+    margin-top: 4rem;
+
+    padding: 2rem;
+
+    border: 2px solid var(--pink);
+
+}
+
+
+.resource-note strong {
+
+    display: block;
+
+    margin-bottom: 1rem;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 1rem;
+
+}
+
+
+.resource-note p {
+
+    margin: 0;
+
+    color: #ddd;
+
+}
+
+
+/* =====================================================
+   TRACKER SECTION
+===================================================== */
+
+.tracker-section {
+
+    padding: 8rem 6vw;
+
+    background: var(--white);
+
+}
+
+
+.tracker-heading {
+
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    column-gap: 5vw;
+
+    margin-bottom: 5rem;
+
+}
+
+
+.tracker-heading .section-label {
+
+    grid-column: 1 / -1;
+
+}
+
+
+.tracker-heading h2 {
+
+    max-width: 800px;
+
+}
+
+
+.tracker-heading h2 span {
+
+    color: var(--pink);
+
+}
+
+
+.tracker-heading p {
+
+    max-width: 500px;
+
+    align-self: end;
+
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.tracker-filters {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+
+    gap: 1rem;
+
+    margin-bottom: 3rem;
+
+    padding: 1.5rem;
+
+    background: var(--warm-white);
+
+    border: 2px solid var(--black);
+
+}
+
+
+.filter-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.filter-group label {
+
+    margin-bottom: .5rem;
+
+    font-size: .7rem;
+
+    font-weight: 700;
+
+    letter-spacing: .1em;
+
+}
+
+
+.filter-group input,
+.filter-group select {
+
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: .75rem;
+
+    background: var(--white);
+
+    color: var(--black);
+
+    border: 2px solid var(--black);
+
+    border-radius: 0;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: .9rem;
+
+}
+
+
+.filter-group input:focus,
+.filter-group select:focus {
+
+    outline: 3px solid var(--pink);
+
+    outline-offset: 2px;
+
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-top: 3px solid var(--black);
+
+    border-left: 2px solid var(--black);
+
+}
+
+
+#table {
+
+    width: 100%;
+
+    min-width: 1100px;
+
+    border-collapse: collapse;
+
+    background: var(--white);
+
+}
+
+
+#table th {
+
+    padding: 1rem;
+
+    background: var(--black);
+
+    color: var(--white);
+
+    border-right: 1px solid #555;
+
+    text-align: left;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .7rem;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+}
+
+
+#table td {
+
+    padding: 1.2rem 1rem;
+
+    border-right: 2px solid var(--black);
+
+    border-bottom: 2px solid var(--black);
+
+    vertical-align: top;
+
+    font-size: .85rem;
+
+}
+
+
+#table tbody tr {
+
+    transition: background .2s ease;
+
+}
+
+
+#table tbody tr:hover {
+
+    background: var(--pink);
+
+}
+
+
+#table .event-name {
+
+    min-width: 220px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-weight: 700;
+
+}
+
+
+.table-link {
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 2px;
+
+    text-underline-offset: 3px;
+
+}
+
+
+.table-link:hover {
+
+    color: var(--mustard);
+
+}
+
+
+.no-results {
+
+    padding: 3rem !important;
+
+    text-align: center;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   TRACKER NOTE
+===================================================== */
+
+.tracker-disclaimer {
+
+    max-width: 900px;
+
+    margin-top: 2rem;
+
+    padding: 1.5rem;
+
+    border-left: 5px solid var(--mustard);
+
+    background: var(--warm-white);
+
+    font-size: .85rem;
+
+    color: var(--charcoal);
+
+}
+
+
+.tracker-disclaimer strong {
+
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+
+/* =====================================================
+   OTHER WORK
+===================================================== */
+
+.other-work {
+
+    padding: 8rem 6vw;
+
+    background: var(--charcoal);
+
+    color: var(--white);
+
+}
+
+
+.other-work h2 {
+
+    margin-bottom: 5rem;
+
+}
+
+
+.other-work h2 span {
+
+    color: var(--pink);
+
+}
+
+
+.other-work-list {
+
+    border-top: 2px solid #777;
+
+}
+
+
+.other-work-item {
+
+    display: grid;
+
+    grid-template-columns: 10% 1fr auto;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    padding: 2rem 0;
+
+    border-bottom: 2px solid #777;
+
+    transition: .25s ease;
+
+}
+
+
+.other-work-item:hover {
+
+    padding-left: 1.5rem;
+
+    background: var(--pink);
+
+    color: var(--black);
+
+}
+
+
+.other-work-number {
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+}
+
+
+.other-work-item > span:nth-child(2) {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+
+    font-weight: 600;
+
+}
+
+
+.other-work-item > span:last-child {
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+}
+
+
+.other-work-item.current {
+
+    background: var(--mustard);
+
+    color: var(--black);
+
+}
+
+
+.other-work-item.current:hover {
+
+    background: var(--pink);
+
+}
+
+
+/* =====================================================
+   BACK TO PORTFOLIO
+===================================================== */
+
+.resource-back {
+
+    padding: 3rem 6vw;
+
+    background: var(--black);
+
+    color: var(--white);
+
+    border-top: 3px solid var(--pink);
+
+}
+
+
+.resource-back a {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+}
+
+
+.resource-back a:hover {
+
+    color: var(--pink);
+
+}
+
+
+/* =====================================================
+   RESOURCE PAGE MOBILE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+
+    .tracker-filters {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .search-group {
+
+        grid-column: 1 / -1;
+
+    }
+
+
+    .resource-description {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .tracker-heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .resource-hero {
+
+        padding: 5rem 7vw;
+
+    }
+
+
+    .resource-hero h1 {
+
+        font-size: 4rem;
+
+    }
+
+
+    .resource-description {
+
+        padding: 5rem 7vw;
+
+    }
+
+
+    .tracker-section {
+
+        padding: 5rem 7vw;
+
+    }
+
+
+    .tracker-heading h2 {
+
+        font-size: 3.2rem;
+
+    }
+
+
+    .tracker-filters {
+
+        grid-template-columns: 1fr;
+
+        padding: 1rem;
+
+    }
+
+
+    .search-group {
+
+        grid-column: auto;
+
+    }
+
+
+    .other-work {
+
+        padding: 5rem 7vw;
+
+    }
+
+
+    .other-work-item {
+
+        grid-template-columns: 10% 1fr;
+
+    }
+
+
+    .other-work-item > span:last-child {
+
+        grid-column: 2;
+
+    }
+
+}

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Manual for Virtual Interaction — a collaborative resource supporting inclusive and effective virtual collaboration in international projects."
+    >
+
+    <title>Manual for Virtual Interaction | Gabriela Méndez</title>
+
+
+    <!-- Portfolio fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet"
+        href="styles.css">
+
+</head>
+
+
+<body class="resource-page">
+
+
+    <!-- =====================================
+         NAVIGATION
+    ====================================== -->
+
+    <header class="site-header">
+
+        <a href="index.html"
+            class="logo">
+
+            GABI<span>.</span>
+
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html#work">
+                WORK
+            </a>
+
+            <a href="index.html#about">
+                ABOUT
+            </a>
+
+            <a href="index.html#recognition">
+                RECOGNITION
+            </a>
+
+            <a href="index.html#contact">
+                CONTACT
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="resource-hero manual-hero">
+
+            <div class="resource-hero-inner">
+
+                <div class="section-label">
+                    SELECTED WORK · 04
+                </div>
+
+
+                <p class="handwritten">
+                    collaboration needs intention.
+                </p>
+
+
+                <h1>
+                    MANUAL FOR<br>
+                    <span>VIRTUAL INTERACTION.</span>
+                </h1>
+
+
+                <p class="resource-intro">
+
+                    A collaborative resource designed to support
+                    inclusive, democratic, and effective virtual
+                    collaboration in international projects.
+
+                </p>
+
+
+                <div class="collaboration-credit">
+
+                    <span>
+                        CO-AUTHORED CONTRIBUTION
+                    </span>
+
+                    <strong>
+                        Mestenhauser Institute for
+                        International Collaboration
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             THE PROJECT
+        ====================================== -->
+
+        <section class="resource-description">
+
+            <div class="resource-description-label">
+
+                <span>01</span>
+
+                THE<br>
+                PROJECT
+
+            </div>
+
+
+            <div class="resource-description-content">
+
+                <p>
+                    How do we collaborate better in virtual spaces?
+                    And how do we create virtual partner communities
+                    where every voice can be heard?
+                </p>
+
+
+                <p>
+                    The Mestenhauser Institute for International
+                    Collaboration led the creation of the
+                    <strong>Manual for Virtual Interaction</strong>
+                    to support collaboration in international
+                    projects across European University Alliances.
+                </p>
+
+
+                <p>
+                    I contributed my expertise to the development
+                    of the manual, particularly around the design
+                    of inclusive and collaborative virtual spaces.
+                </p>
+
+
+                <div class="resource-note">
+
+                    <strong>
+                        THE GOAL
+                    </strong>
+
+                    <p>
+                        Create virtual spaces that support meaningful
+                        participation, collaboration, and dialogue
+                        across institutions and contexts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             TWO SECTIONS
+        ====================================== -->
+
+        <section class="manual-sections section">
+
+            <div class="section-label">
+                02 · THE MANUAL
+            </div>
+
+
+            <div class="manual-section-grid">
+
+
+                <!-- PEDAGOGICAL -->
+
+                <article class="manual-card pedagogical-card">
+
+                    <span class="manual-card-number">
+                        01
+                    </span>
+
+
+                    <p class="manual-card-label">
+                        PEDAGOGICAL SECTION
+                    </p>
+
+
+                    <h2>
+                        DESIGN<br>
+                        FOR<br>
+                        <span>EVERY VOICE.</span>
+                    </h2>
+
+
+                    <p>
+                        Provides insights into the design principles
+                        of an inclusive, democratic, and highly
+                        collaborative virtual space.
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Inclusive participation
+                        </li>
+
+                        <li>
+                            Democratic collaboration
+                        </li>
+
+                        <li>
+                            Intentional virtual interaction
+                        </li>
+
+                        <li>
+                            Supporting diverse voices
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+
+                <!-- TECHNICAL -->
+
+                <article class="manual-card technical-card">
+
+                    <span class="manual-card-number">
+                        02
+                    </span>
+
+
+                    <p class="manual-card-label">
+                        TECHNICAL SECTION
+                    </p>
+
+
+                    <h2>
+                        MAKE THE<br>
+                        SPACE<br>
+                        <span>WORK.</span>
+                    </h2>
+
+
+                    <p>
+                        Provides practical guidance for setting up
+                        virtual spaces and supporting partner
+                        collaboration.
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Microsoft Teams setup
+                        </li>
+
+                        <li>
+                            Ethical IT use
+                        </li>
+
+                        <li>
+                            Virtual space management
+                        </li>
+
+                        <li>
+                            Supporting project partners
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MY CONTRIBUTION
+        ====================================== -->
+
+        <section class="manual-contribution">
+
+            <div class="manual-contribution-number">
+                03
+            </div>
+
+
+            <div class="manual-contribution-content">
+
+                <div class="example-label">
+                    MY CONTRIBUTION
+                </div>
+
+
+                <h2>
+                    PEDAGOGY<br>
+                    MEETS<br>
+                    <span>PRACTICE.</span>
+                </h2>
+
+
+                <p>
+                    My contribution to the project brought together
+                    my experience in online education, instructional
+                    design, COIL, Virtual Exchange, and faculty
+                    development.
+                </p>
+
+
+                <p>
+                    The manual reflects an approach I value deeply:
+                    virtual collaboration is not only a technical
+                    challenge. It is a learning and human experience
+                    that requires intentional design.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             RECOGNITION / COLLABORATION
+        ====================================== -->
+
+        <section class="manual-recognition section">
+
+            <div class="section-label">
+                04 · COLLABORATION
+            </div>
+
+
+            <div class="manual-recognition-grid">
+
+                <div>
+
+                    <p class="handwritten">
+                        made together.
+                    </p>
+
+                    <h2>
+                        GOOD WORK<br>
+                        IS OFTEN<br>
+                        <span>COLLABORATIVE.</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        The manual was developed through a
+                        collaborative effort involving the
+                        Mestenhauser Institute for International
+                        Collaboration and members of the YOUROPE
+                        team.
+                    </p>
+
+
+                    <p>
+                        I was grateful to contribute my expertise
+                        to a project focused on making international
+                        collaboration more inclusive and effective.
+                    </p>
+
+
+                    <div class="project-credit">
+
+                        <strong>
+                            PROJECT
+                        </strong>
+
+                        <span>
+                            Manual for Virtual Interaction
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-credit">
+
+                        <strong>
+                            ORGANIZATION
+                        </strong>
+
+                        <span>
+                            Mestenhauser Institute for
+                            International Collaboration
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-credit">
+
+                        <strong>
+                            CONTRIBUTION
+                        </strong>
+
+                        <span>
+                            Co-author / Pedagogical expertise
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             FULL MANUAL
+        ====================================== -->
+
+        <section class="pdf-resource section">
+
+            <div class="section-label">
+                05 · FULL RESOURCE
+            </div>
+
+
+            <div class="pdf-heading">
+
+                <div>
+
+                    <p class="handwritten">
+                        explore the work.
+                    </p>
+
+                    <h2>
+                        READ THE<br>
+                        <span>FULL MANUAL.</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Explore the complete Manual for Virtual
+                        Interaction and discover practical and
+                        pedagogical approaches to virtual
+                        collaboration in international projects.
+                    </p>
+
+
+                    <a
+                        href="files/Manual_for_Virtual_Interaction.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        class="button button-dark">
+
+                        OPEN PDF ↗
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="pdf-viewer">
+
+                <iframe
+                    src="files/Manual_for_Virtual_Interaction.pdf"
+                    title="Manual for Virtual Interaction"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+
+            <div class="pdf-download">
+
+                <a
+                    href="files/Manual_for_Virtual_Interaction.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    VIEW FULL MANUAL ↗
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MORE WORK
+        ====================================== -->
+
+        <section class="other-work">
+
+            <div class="section-label">
+                06 · MORE RESOURCES
+            </div>
+
+
+            <h2>
+                EXPLORE<br>
+                <span>MORE WORK.</span>
+            </h2>
+
+
+            <div class="other-work-list">
+
+
+                <a
+                    href="conferencetracker.html"
+                    class="other-work-item">
+
+                    <span class="other-work-number">
+                        01
+                    </span>
+
+                    <span>
+                        Conference Tracker
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="language.html"
+                    class="other-work-item">
+
+                    <span class="other-work-number">
+                        02
+                    </span>
+
+                    <span>
+                        Language Acknowledgement
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="guide.html"
+                    class="other-work-item">
+
+                    <span class="other-work-number">
+                        03
+                    </span>
+
+                    <span>
+                        COIL Technology Guide
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="manual.html"
+                    class="other-work-item current">
+
+                    <span class="other-work-number">
+                        04
+                    </span>
+
+                    <span>
+                        Manual for Virtual Interaction
+                    </span>
+
+                    <span>
+                        CURRENT
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             BACK
+        ====================================== -->
+
+        <section class="resource-back">
+
+            <a href="index.html">
+
+                ← BACK TO PORTFOLIO
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                GABRIELA MÉNDEZ
+            </strong>
+
+            <span>
+                Mexico · Working globally
+            </span>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener">
+
+                LinkedIn
+
+            </a>
+
+
+            <a href="mailto:your-email@example.com">
+                Email
+            </a>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

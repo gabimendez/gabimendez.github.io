@@ -1,0 +1,772 @@
+[
+  {
+    "institution": "FLACSO Argentina",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Instituto Universitario de Ciencias de la Salud - Fundación H. A. Barceló",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Instituto Universitario Italiano de Rosario",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Pontificia Universidad Católica Argentina",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "UFLO Universidad",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Abierta Interamericana",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Austral",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Católica de Salta",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Católica de Santa Fe",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Concepción del Uruguay",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad del Gran Rosario",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad del Museo Social Argentino",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad del Salvador",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional Arturo Jauretche",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de Avellaneda",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de José Clemente Paz (UNPAZ)",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de Lanús",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de las Artes",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de Quilmes",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de San Martín",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional del Noroeste de la Provincia de Buenos Aires (UNNOBA)",
+    "country": "Argentina",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Artevelde University of Applied Sciences",
+    "country": "Belgium",
+    "region": "Europe"
+  },
+  {
+    "institution": "Centro Paula Souza",
+    "country": "Brazil",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Centro Paula Souza - CESU",
+    "country": "Brazil",
+    "region": "Latin America"
+  },
+  {
+    "institution": "FATEC",
+    "country": "Brazil",
+    "region": "Latin America"
+  },
+  {
+    "institution": "São Paulo State University (UNESP)",
+    "country": "Brazil",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidade do Vale do Itajaí - UNIVALI",
+    "country": "Brazil",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Conestoga College",
+    "country": "Canada",
+    "region": "North America"
+  },
+  {
+    "institution": "North Island College",
+    "country": "Canada",
+    "region": "North America"
+  },
+  {
+    "institution": "Seneca College",
+    "country": "Canada",
+    "region": "North America"
+  },
+  {
+    "institution": "UManresa",
+    "country": "Catalunya",
+    "region": "Europe"
+  },
+  {
+    "institution": "Duoc UC",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "INACAP",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Pontificia Universidad Católica de Chile",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Pontificia Universidad Católica de Valparaíso",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Católica del Maule",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Las Américas (UDLA)",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Santiago de Chile",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Talca",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad del Desarrollo (UDD)",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Santo Tomás",
+    "country": "Chile",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Xi'an Jiaotong-Liverpool University",
+    "country": "China",
+    "region": "Asia"
+  },
+  {
+    "institution": "Institución Universitaria Pascual Bravo",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Instituto Tecnológico Metropolitano",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Autónoma de Bucaramanga",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Autónoma de Occidente",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Catolica de Manizales",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad CES",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Antioquia",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Caldas",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de La Sabana",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Manizales",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Medellín",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de San Buenaventura",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad del Rosario",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad del Valle",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad EAFIT",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Ean",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad EIA",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad El Bosque",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Externado de Colombia",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Icesi",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Industrial de Santander",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de Colombia",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Pedagógica y Tecnológica de Colombia",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Pontificia Bolivariana",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Tecnológica de Bolivar",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Tecnológica de Pereira",
+    "country": "Colombia",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Estatal a Distancia UNED",
+    "country": "Costa Rica",
+    "region": "Latin America"
+  },
+  {
+    "institution": "University College of Northern Denmark",
+    "country": "Denmark",
+    "region": "Europe"
+  },
+  {
+    "institution": "Pontificia Universidad Católica del Ecuador",
+    "country": "Ecuador",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad San Francisco de Quito",
+    "country": "Ecuador",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de El Salvador",
+    "country": "El Salvador",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Hochschule für Grafik und Buchkunst Leipzig",
+    "country": "Germany",
+    "region": "Europe"
+  },
+  {
+    "institution": "Hochschule Trier",
+    "country": "Germany",
+    "region": "Europe"
+  },
+  {
+    "institution": "Universität Potsdam",
+    "country": "Germany",
+    "region": "Europe"
+  },
+  {
+    "institution": "Universidad José Cecilio del Valle",
+    "country": "Honduras",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional Autónoma de Honduras",
+    "country": "Honduras",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Nacional de Ciencias Forestales",
+    "country": "Honduras",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Pedagógica Nacional Francisco Morazán",
+    "country": "Honduras",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Tecnológica de Honduras",
+    "country": "Honduras",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Dedan Kimathi University of Technology",
+    "country": "Kenya",
+    "region": "Africa"
+  },
+  {
+    "institution": "Centro Universitario de Ciencias de la Salud",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "CETYS Universidad",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "ITESO Universidad Jesuita de Guadalajara",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Tecnológico de Monterrey",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Autónoma de Ciudad Juárez",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Autónoma del Estado de Hidalgo",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Monterrey UDEM",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Panamericana",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad Veracruzana",
+    "country": "Mexico",
+    "region": "Latin America"
+  },
+  {
+    "institution": "An Najah National University",
+    "country": "Palestine (West Bank)",
+    "region": "Middle East"
+  },
+  {
+    "institution": "Universidad Tecnológica de Panamá",
+    "country": "Panama",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Tecsup",
+    "country": "Peru",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Universidad de Lima",
+    "country": "Peru",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Uniwersytet Ekonomiczny w Krakowie",
+    "country": "Poland",
+    "region": "Europe"
+  },
+  {
+    "institution": "Uniwersytet Rzeszowski",
+    "country": "Poland",
+    "region": "Europe"
+  },
+  {
+    "institution": "Cape Peninsula University of Technology",
+    "country": "South Africa",
+    "region": "Africa"
+  },
+  {
+    "institution": "Central University of Technology, Free State",
+    "country": "South Africa",
+    "region": "Africa"
+  },
+  {
+    "institution": "University of the Free State (UFS)",
+    "country": "South Africa",
+    "region": "Africa"
+  },
+  {
+    "institution": "University of Venda",
+    "country": "South Africa",
+    "region": "Africa"
+  },
+  {
+    "institution": "UCV: Universidad Católica de Valencia",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "institution": "Universidad CEU San Pablo",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "institution": "Universidad de Cádiz",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "institution": "Universidad de Navarra",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "institution": "Universitat de Girona",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "institution": "Universitat Rovira i Virgili",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "institution": "Prince of Songkla University",
+    "country": "Thailand",
+    "region": "Asia"
+  },
+  {
+    "institution": "Amsterdam University of Applied Sciences",
+    "country": "The Netherlands",
+    "region": "Europe"
+  },
+  {
+    "institution": "Fontys",
+    "country": "The Netherlands",
+    "region": "Europe"
+  },
+  {
+    "institution": "Hogeschool Utrecht",
+    "country": "The Netherlands",
+    "region": "Europe"
+  },
+  {
+    "institution": "San Pedro College",
+    "country": "The Philippines",
+    "region": "Asia"
+  },
+  {
+    "institution": "Yaşar Üniversitesi",
+    "country": "Turkey",
+    "region": "Europe"
+  },
+  {
+    "institution": "Uzhhorod National University",
+    "country": "Ukraine",
+    "region": "Europe"
+  },
+  {
+    "institution": "American University in the Emirates",
+    "country": "United Arab Emirates",
+    "region": "Middle East"
+  },
+  {
+    "institution": "Nottingham Trent University",
+    "country": "United Kingdom",
+    "region": "Europe"
+  },
+  {
+    "institution": "Sheffield Hallam University",
+    "country": "United Kingdom",
+    "region": "Europe"
+  },
+  {
+    "institution": "Alamo Colleges",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "American University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Boston University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Cal State LA",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "California State University Stanislaus",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Case Western Reserve University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "College of Saint Benedict and Saint John's University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "CUNY LaGuardia",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "DePaul University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Florida International University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Georgia State University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Hostos Community College",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Indiana University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Ivy Tech Community College",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Juniata College",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Lehigh University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Miami Dade College",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "NC State University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "New York University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Northwest Vista College",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Old Dominion University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "SUNY / SUNY COIL",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "The Ohio State University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "The University of Rhode Island",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "UC Davis",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Kentucky",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Loyola Marymount University",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Arkansas",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Denver",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Florida",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Michigan",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Minnesota",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Rio Grande Valley",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Tennessee, Knoxville",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "University of Washington",
+    "country": "USA",
+    "region": "North America"
+  },
+  {
+    "institution": "Andrés Bello Catholic University",
+    "country": "Venezuela",
+    "region": "Latin America"
+  },
+  {
+    "institution": "Lupane State University",
+    "country": "Zimbabwe",
+    "region": "Africa"
+  }
+]

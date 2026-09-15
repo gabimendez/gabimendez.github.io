@@ -2019,3 +2019,392 @@ p {
     }
 
 }
+/* =====================================================
+   LANGUAGE ACKNOWLEDGEMENT
+===================================================== */
+
+
+/* =====================================================
+   HOW TO USE
+===================================================== */
+
+.language-how {
+
+    background: var(--warm-white);
+
+}
+
+
+.language-how-grid {
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    gap: 5vw;
+
+}
+
+
+.language-how-grid h2 span {
+
+    color: var(--pink);
+
+}
+
+
+.language-steps {
+
+    border-top: 2px solid var(--black);
+
+}
+
+
+.language-step {
+
+    display: grid;
+
+    grid-template-columns: 50px 1fr;
+
+    gap: 2rem;
+
+    padding: 2rem 0;
+
+    border-bottom: 2px solid var(--black);
+
+}
+
+
+.language-step > span {
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    color: var(--pink);
+
+}
+
+
+.language-step h3 {
+
+    margin-bottom: .75rem;
+
+}
+
+
+.language-step p {
+
+    max-width: 550px;
+
+    color: var(--charcoal);
+
+}
+
+
+/* =====================================================
+   LANGUAGE EXAMPLES
+===================================================== */
+
+.language-example {
+
+    display: grid;
+
+    grid-template-columns: 15% 85%;
+
+    gap: 4vw;
+
+    padding: 7rem 6vw;
+
+    border-top: 3px solid var(--black);
+
+}
+
+
+.english-example {
+
+    background: var(--black);
+
+    color: var(--white);
+
+}
+
+
+.spanish-example {
+
+    background: var(--mustard);
+
+    color: var(--black);
+
+}
+
+
+.language-example-number {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+}
+
+
+.language-example-content {
+
+    max-width: 1100px;
+
+}
+
+
+.example-label {
+
+    margin-bottom: 2rem;
+
+    font-size: .7rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+}
+
+
+.english-example .example-label {
+
+    color: var(--pink);
+
+}
+
+
+.spanish-example .example-label {
+
+    color: var(--black);
+
+}
+
+
+.language-example h2 {
+
+    margin-bottom: 4rem;
+
+    font-size: clamp(3rem, 6vw, 6rem);
+
+}
+
+
+.language-example h2 span {
+
+    color: var(--pink);
+
+}
+
+
+.spanish-example h2 span {
+
+    color: var(--white);
+
+}
+
+
+.language-example blockquote {
+
+    max-width: 850px;
+
+    padding-left: 2rem;
+
+    border-left: 5px solid var(--pink);
+
+    font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+
+    line-height: 1.7;
+
+    font-style: normal;
+
+}
+
+
+.spanish-example blockquote {
+
+    border-left-color: var(--black);
+
+}
+
+
+/* =====================================================
+   PDF RESOURCE
+===================================================== */
+
+.pdf-resource {
+
+    background: var(--white);
+
+}
+
+
+.pdf-heading {
+
+    display: grid;
+
+    grid-template-columns: 60% 40%;
+
+    gap: 5vw;
+
+    align-items: end;
+
+    margin-bottom: 4rem;
+
+}
+
+
+.pdf-heading h2 span {
+
+    color: var(--pink);
+
+}
+
+
+.pdf-heading > div:last-child p {
+
+    max-width: 500px;
+
+    margin-bottom: 2rem;
+
+    color: var(--charcoal);
+
+}
+
+
+.pdf-viewer {
+
+    width: 100%;
+
+    height: 750px;
+
+    overflow: hidden;
+
+    border: 3px solid var(--black);
+
+    background: var(--charcoal);
+
+}
+
+
+.pdf-viewer iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+}
+
+
+.pdf-download {
+
+    padding: 1.5rem;
+
+    text-align: right;
+
+    border-left: 2px solid var(--black);
+
+    border-right: 2px solid var(--black);
+
+    border-bottom: 2px solid var(--black);
+
+}
+
+
+.pdf-download a {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+}
+
+
+.pdf-download a:hover {
+
+    color: var(--pink);
+
+}
+
+
+/* =====================================================
+   LANGUAGE PAGE MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+
+    .language-how-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 4rem;
+
+    }
+
+
+    .language-example {
+
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+    }
+
+
+    .pdf-heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .language-example {
+
+        padding: 5rem 7vw;
+
+    }
+
+
+    .language-example h2 {
+
+        font-size: 3.2rem;
+
+        margin-bottom: 3rem;
+
+    }
+
+
+    .language-example blockquote {
+
+        padding-left: 1.2rem;
+
+        font-size: 1rem;
+
+    }
+
+
+    .pdf-viewer {
+
+        height: 600px;
+
+    }
+
+}

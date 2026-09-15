@@ -2689,3 +2689,441 @@ p {
     }
 
 }
+/* =====================================================
+   MANUAL FOR VIRTUAL INTERACTION
+===================================================== */
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.manual-hero h1 span {
+
+    color: var(--mustard);
+
+}
+
+
+.collaboration-credit {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .4rem;
+
+    margin-top: 3rem;
+
+    padding-left: 1rem;
+
+    border-left: 4px solid var(--pink);
+
+}
+
+
+.collaboration-credit span {
+
+    font-size: .7rem;
+
+    font-weight: 700;
+
+    letter-spacing: .1em;
+
+}
+
+
+.collaboration-credit strong {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .95rem;
+
+}
+
+
+/* =====================================================
+   MANUAL SECTIONS
+===================================================== */
+
+.manual-sections {
+
+    background: var(--white);
+
+}
+
+
+.manual-section-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem;
+
+}
+
+
+.manual-card {
+
+    padding: 3rem;
+
+    min-height: 600px;
+
+    border: 3px solid var(--black);
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.pedagogical-card {
+
+    background: var(--pink);
+
+}
+
+
+.technical-card {
+
+    background: var(--warm-white);
+
+}
+
+
+.manual-card-number {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    margin-bottom: 3rem;
+
+}
+
+
+.manual-card-label {
+
+    font-size: .7rem;
+
+    font-weight: 700;
+
+    letter-spacing: .1em;
+
+    margin-bottom: 2rem;
+
+}
+
+
+.manual-card h2 {
+
+    margin-bottom: 2rem;
+
+    font-size: clamp(2.8rem, 5vw, 5rem);
+
+}
+
+
+.pedagogical-card h2 span {
+
+    color: var(--white);
+
+}
+
+
+.technical-card h2 span {
+
+    color: var(--mustard);
+
+}
+
+
+.manual-card > p {
+
+    max-width: 550px;
+
+    margin-bottom: 2rem;
+
+    line-height: 1.6;
+
+}
+
+
+.manual-card ul {
+
+    margin-top: auto;
+
+    padding-top: 2rem;
+
+    border-top: 2px solid var(--black);
+
+    list-style: none;
+
+}
+
+
+.manual-card li {
+
+    padding: .75rem 0;
+
+    border-bottom: 1px solid var(--black);
+
+    font-size: .9rem;
+
+}
+
+
+.manual-card li::before {
+
+    content: "→ ";
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   MY CONTRIBUTION
+===================================================== */
+
+.manual-contribution {
+
+    display: grid;
+
+    grid-template-columns: 15% 85%;
+
+    gap: 4vw;
+
+    padding: 8rem 6vw;
+
+    background: var(--black);
+
+    color: var(--white);
+
+}
+
+
+.manual-contribution-number {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    color: var(--pink);
+
+}
+
+
+.manual-contribution-content {
+
+    max-width: 1000px;
+
+}
+
+
+.manual-contribution-content .example-label {
+
+    color: var(--pink);
+
+}
+
+
+.manual-contribution h2 {
+
+    margin-bottom: 4rem;
+
+    font-size: clamp(3rem, 6vw, 6rem);
+
+}
+
+
+.manual-contribution h2 span {
+
+    color: var(--pink);
+
+}
+
+
+.manual-contribution-content > p {
+
+    max-width: 750px;
+
+    margin-bottom: 2rem;
+
+    color: #ddd;
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   PROJECT RECOGNITION
+===================================================== */
+
+.manual-recognition {
+
+    background: var(--warm-white);
+
+}
+
+
+.manual-recognition-grid {
+
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    gap: 5vw;
+
+}
+
+
+.manual-recognition-grid h2 span {
+
+    color: var(--mustard);
+
+}
+
+
+.manual-recognition-grid > div:last-child {
+
+    max-width: 600px;
+
+}
+
+
+.manual-recognition-grid > div:last-child > p {
+
+    margin-bottom: 2rem;
+
+}
+
+
+.project-credit {
+
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    gap: 1rem;
+
+    padding: 1.2rem 0;
+
+    border-top: 2px solid var(--black);
+
+}
+
+
+.project-credit:last-child {
+
+    border-bottom: 2px solid var(--black);
+
+}
+
+
+.project-credit strong {
+
+    font-size: .7rem;
+
+    letter-spacing: .08em;
+
+}
+
+
+.project-credit span {
+
+    font-size: .9rem;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+
+    .manual-section-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .manual-card {
+
+        min-height: auto;
+
+    }
+
+
+    .manual-contribution {
+
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+    }
+
+
+    .manual-recognition-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 4rem;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .manual-card {
+
+        padding: 2rem;
+
+    }
+
+
+    .manual-card h2 {
+
+        font-size: 3rem;
+
+    }
+
+
+    .manual-contribution {
+
+        padding: 5rem 7vw;
+
+    }
+
+
+    .manual-contribution h2 {
+
+        font-size: 3.2rem;
+
+    }
+
+
+    .project-credit {
+
+        grid-template-columns: 1fr;
+
+        gap: .5rem;
+
+    }
+
+}

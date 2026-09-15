@@ -2924,3 +2924,96 @@ p {
     }
 
 }
+
+    /* =========================================
+   GLOBAL CONNECTIONS
+   ========================================= */
+
+.global-connections-intro {
+    padding: 120px 8%;
+    background: #ebe6e4;
+}
+
+.global-connections-intro .section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 60px;
+}
+
+.global-connections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.global-connections-title h2 {
+    margin: 0;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+}
+
+.global-connections-title h2 span {
+    color: #df7aa3;
+}
+
+.global-connections-text {
+    max-width: 600px;
+}
+
+.global-connections-text .lead {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.global-connections-text p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.connections-button {
+    display: inline-block;
+    padding: 16px 24px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+.connections-button:hover {
+    background: #df7aa3;
+    color: #000000;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .global-connections-intro {
+        padding: 80px 6%;
+    }
+
+    .global-connections-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .global-connections-title h2 {
+        font-size: clamp(2.8rem, 12vw, 5rem);
+    }
+
+    .global-connections-text .lead {
+        font-size: 1.2rem;
+    }
+
+}
+
+</html>

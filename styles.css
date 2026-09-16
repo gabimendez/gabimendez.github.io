@@ -542,6 +542,10 @@ p {
 
     grid-template-columns: repeat(5, 1fr);
 
+   gap: 40px;
+   
+   padding: 60px 5vw 60px 8vw;
+
     background: var(--black);
 
     color: var(--white);

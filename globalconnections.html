@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
-    content="Global Connections by Gabriela Méndez — a growing record of institutions and educators connected through global learning, COIL, virtual exchange, professional development, and collaborative learning.">
+    content="Global Connections by Gabriela Méndez — a growing record of institutions connected through global learning, COIL, virtual exchange, professional development, and collaborative learning.">
 
 <title>Global Connections | Gabriela Méndez</title>
 
@@ -53,10 +53,13 @@
 
     </nav>
 
-    <button class="menu-toggle"
+    <button
+        class="menu-toggle"
         aria-label="Open navigation"
         aria-expanded="false">
+
         ☰
+
     </button>
 
 </header>
@@ -139,22 +142,15 @@
                 languages, and educational contexts.
             </p>
 
-            <p>
-                Rather than simply counting institutions or countries,
-                this collection represents the
-                <strong>relationships, conversations, and shared learning
-                experiences</strong> that make global learning meaningful.
-            </p>
-
-
             <div class="resource-note">
 
                 <strong>WHY IT MATTERS</strong>
 
                 <p>
-                    Global learning grows through relationships. Every
-                    institution represents educators, ideas, perspectives,
-                    and opportunities to learn with and from one another.
+                    Global learning grows through relationships.
+                    Every institution represents educators, ideas,
+                    perspectives, and opportunities to learn with
+                    and from one another.
                 </p>
 
             </div>
@@ -166,13 +162,11 @@
 
 
     <!-- =====================================
-         CONNECTIONS TRACKER
+         CONNECTIONS
     ====================================== -->
 
     <section class="tracker-section connections-tracker">
 
-
-        <!-- HEADING -->
 
         <div class="tracker-heading">
 
@@ -183,8 +177,8 @@
                 </div>
 
                 <h2>
-                    FIND THE<br>
-                    <span>CONNECTIONS.</span>
+                    EXPLORE THE<br>
+                    <span>NETWORK.</span>
                 </h2>
 
             </div>
@@ -192,176 +186,143 @@
 
             <p>
                 Explore the institutions represented in my global
-                learning network. Search by institution or filter
-                by country and region.
+                learning network. Filter the list by country or region.
             </p>
 
         </div>
 
 
-<!-- =====================================
-     FILTERS
-====================================== -->
 
-<div class="tracker-filters">
+        <!-- =====================================
+             FILTERS
+        ====================================== -->
 
-```
-<div class="filter-group">
-
-    <label for="region-filter">
-        REGION
-    </label>
-
-    <select id="region-filter">
-
-        <option value="">
-            All Regions
-        </option>
-
-    </select>
-
-</div>
+        <div class="tracker-filters">
 
 
-<div class="filter-group">
+            <div class="filter-group">
 
-    <label for="country-filter">
-        COUNTRY
-    </label>
+                <label for="region-filter">
+                    REGION
+                </label>
 
-    <select id="country-filter">
+                <select id="region-filter">
 
-        <option value="">
-            All Countries
-        </option>
+                    <option value="">
+                        All Regions
+                    </option>
 
-    </select>
+                </select>
 
-</div>
-
-
-<div class="filter-group">
-
-    <label for="sort-filter">
-        SORT BY
-    </label>
-
-    <select id="sort-filter">
-
-        <option value="name-asc">
-            Institution A–Z
-        </option>
-
-        <option value="name-desc">
-            Institution Z–A
-        </option>
-
-        <option value="country-asc">
-            Country A–Z
-        </option>
-
-        <option value="region-asc">
-            Region A–Z
-        </option>
-
-    </select>
-
-</div>
+            </div>
 
 
-<button
-    id="clear-filters"
-    type="button"
-    class="filter-clear">
+            <div class="filter-group">
 
-    CLEAR FILTERS
+                <label for="country-filter">
+                    COUNTRY
+                </label>
 
-</button>
-```
+                <select id="country-filter">
 
-</div>
+                    <option value="">
+                        All Countries
+                    </option>
 
-<!-- =====================================
-     RESULTS SUMMARY
-====================================== -->
+                </select>
 
-<div class="connections-summary">
+            </div>
 
-```
-<span id="results-count">
-    0
-</span>
 
-institutions shown
-```
+            <button
+                id="clear-filters"
+                type="button"
+                class="filter-clear">
 
-</div>
+                CLEAR FILTERS
 
-<!-- =====================================
-     INSTITUTIONS TABLE
-====================================== -->
+            </button>
 
-<div class="table-wrapper">
-
-```
-<table id="connections-table">
-
-    <thead>
-
-        <tr>
-
-            <th>
-                Institution
-            </th>
-
-            <th>
-                Country
-            </th>
-
-            <th>
-                Region
-            </th>
-
-        </tr>
-
-    </thead>
-
-    <tbody id="connections-body">
-    </tbody>
-
-</table>
-```
-
-</div>
-
-<!-- =====================================
-     NO RESULTS
-====================================== -->
-
-<div
-    id="no-results"
-    class="tracker-empty"
-    hidden>
-
-```
-No institutions found.
-Try changing your filters.
-```
-
-</div>
+        </div>
 
 
 
-        <!-- DATA NOTE -->
+        <!-- =====================================
+             RESULTS COUNT
+        ====================================== -->
+
+        <div class="connections-summary">
+
+            <span id="results-count">
+                0
+            </span>
+
+            institutions shown
+
+        </div>
+
+
+
+        <!-- =====================================
+             INSTITUTIONS TABLE
+        ====================================== -->
+
+        <div class="table-wrapper">
+
+            <table id="connections-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Institution
+                        </th>
+
+                        <th>
+                            Country
+                        </th>
+
+                        <th>
+                            Region
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="connections-body">
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- =====================================
+             NO RESULTS
+        ====================================== -->
+
+        <div
+            id="no-results"
+            class="tracker-empty"
+            hidden>
+
+            No institutions match your filters.
+
+        </div>
+
+
 
         <p class="tracker-disclaimer">
 
             <strong>PLEASE NOTE:</strong>
 
-            This is a growing record rather than a complete list.
-            It represents institutions connected through different
-            professional and collaborative learning experiences.
-            The list will continue to evolve as new connections are made.
+            This is a growing record of institutions represented
+            through different professional and collaborative
+            learning experiences. It is not intended to be a
+            complete list of every institution I've worked with.
 
         </p>
 
@@ -382,8 +343,8 @@ Try changing your filters.
         <p>
 
             Global learning is not only about connecting institutions.
-            It's about creating meaningful opportunities for people to
-            learn <strong>with</strong> and <strong>from</strong>
+            It's about creating meaningful opportunities for people
+            to learn <strong>with</strong> and <strong>from</strong>
             one another.
 
         </p>
@@ -587,11 +548,6 @@ Try changing your filters.
        DOM ELEMENTS
     ====================================== */
 
-    const searchInput =
-        document.getElementById(
-            "connection-search"
-        );
-
     const regionFilter =
         document.getElementById(
             "region-filter"
@@ -600,6 +556,11 @@ Try changing your filters.
     const countryFilter =
         document.getElementById(
             "country-filter"
+        );
+
+    const clearFiltersButton =
+        document.getElementById(
+            "clear-filters"
         );
 
     const connectionsBody =
@@ -617,15 +578,10 @@ Try changing your filters.
             "no-results"
         );
 
-    const clearFiltersButton =
-        document.getElementById(
-            "clear-filters"
-        );
-
 
 
     /* =====================================
-       LOAD DATA
+       LOAD JSON DATA
     ====================================== */
 
     fetch("globalconnections.json")
@@ -646,9 +602,10 @@ Try changing your filters.
 
         .then(data => {
 
-            connections = Array.isArray(data)
-                ? data
-                : [];
+            connections =
+                Array.isArray(data)
+                    ? data
+                    : [];
 
             populateFilters();
 
@@ -763,17 +720,11 @@ Try changing your filters.
     function getFilteredConnections() {
 
 
-        const search =
-            searchInput.value
-                .toLowerCase()
-                .trim();
-
-
-        const region =
+        const selectedRegion =
             regionFilter.value;
 
 
-        const country =
+        const selectedCountry =
             countryFilter.value;
 
 
@@ -782,78 +733,41 @@ Try changing your filters.
 
             .filter(item => {
 
-
-                const name =
-                    String(
-                        item.name || ""
-                    );
-
-
-                const itemCountry =
-                    String(
-                        item.country || ""
-                    );
-
-
-                const itemRegion =
-                    String(
-                        item.region || ""
-                    );
-
-
-
-                const matchesSearch =
-
-                    !search ||
-
-                    name
-                        .toLowerCase()
-                        .includes(search);
-
-
-
                 const matchesRegion =
-
-                    !region ||
-
-                    itemRegion === region;
-
+                    !selectedRegion ||
+                    item.region === selectedRegion;
 
 
                 const matchesCountry =
-
-                    !country ||
-
-                    itemCountry === country;
-
+                    !selectedCountry ||
+                    item.country === selectedCountry;
 
 
                 return (
-
-                    matchesSearch &&
-
                     matchesRegion &&
-
                     matchesCountry
-
                 );
 
             })
 
-            .sort(
-                (a, b) =>
-                    String(a.name || "")
-                        .localeCompare(
-                            String(b.name || "")
-                        )
-            );
+            .sort((a, b) => {
+
+                return String(
+                    a.institution || ""
+                ).localeCompare(
+                    String(
+                        b.institution || ""
+                    )
+                );
+
+            });
 
     }
 
 
 
     /* =====================================
-       RENDER TABLE
+       RENDER INSTITUTIONS
     ====================================== */
 
     function renderConnections() {
@@ -861,7 +775,6 @@ Try changing your filters.
 
         const filtered =
             getFilteredConnections();
-
 
 
         connectionsBody.innerHTML = "";
@@ -897,7 +810,7 @@ Try changing your filters.
 
 
             institutionCell.textContent =
-                item.name || "—";
+                item.institution || "—";
 
 
             countryCell.textContent =
@@ -939,7 +852,6 @@ Try changing your filters.
             filtered.length;
 
 
-
         noResults.hidden =
             filtered.length !== 0;
 
@@ -952,8 +864,6 @@ Try changing your filters.
     ====================================== */
 
     function clearFilters() {
-
-        searchInput.value = "";
 
         regionFilter.value = "";
 
@@ -968,12 +878,6 @@ Try changing your filters.
     /* =====================================
        EVENT LISTENERS
     ====================================== */
-
-    searchInput.addEventListener(
-        "input",
-        renderConnections
-    );
-
 
     regionFilter.addEventListener(
         "change",

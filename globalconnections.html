@@ -199,134 +199,156 @@
         </div>
 
 
+<!-- =====================================
+     FILTERS
+====================================== -->
 
-        <!-- FILTERS -->
+<div class="tracker-filters">
 
-        <div class="tracker-filters">
+```
+<div class="filter-group">
 
+    <label for="region-filter">
+        REGION
+    </label>
 
-            <div class="filter-group search-group">
+    <select id="region-filter">
 
-                <label for="connection-search">
-                    SEARCH
-                </label>
+        <option value="">
+            All Regions
+        </option>
 
-                <input
-                    type="search"
-                    id="connection-search"
-                    placeholder="Search institutions..."
-                    autocomplete="off">
+    </select>
 
-            </div>
-
-
-            <div class="filter-group">
-
-                <label for="region-filter">
-                    REGION
-                </label>
-
-                <select id="region-filter">
-
-                    <option value="">
-                        All Regions
-                    </option>
-
-                </select>
-
-            </div>
+</div>
 
 
-            <div class="filter-group">
+<div class="filter-group">
 
-                <label for="country-filter">
-                    COUNTRY
-                </label>
+    <label for="country-filter">
+        COUNTRY
+    </label>
 
-                <select id="country-filter">
+    <select id="country-filter">
 
-                    <option value="">
-                        All Countries
-                    </option>
+        <option value="">
+            All Countries
+        </option>
 
-                </select>
+    </select>
 
-            </div>
-
-
-            <button
-                id="clear-filters"
-                type="button"
-                class="filter-clear">
-
-                CLEAR FILTERS
-
-            </button>
-
-        </div>
+</div>
 
 
+<div class="filter-group">
 
-        <!-- RESULTS SUMMARY -->
+    <label for="sort-filter">
+        SORT BY
+    </label>
 
-        <div class="connections-summary">
+    <select id="sort-filter">
 
-            <span id="results-count">
-                0
-            </span>
+        <option value="name-asc">
+            Institution A–Z
+        </option>
 
-            institutions shown
+        <option value="name-desc">
+            Institution Z–A
+        </option>
 
-        </div>
+        <option value="country-asc">
+            Country A–Z
+        </option>
 
+        <option value="region-asc">
+            Region A–Z
+        </option>
 
+    </select>
 
-        <!-- TABLE -->
-
-        <div class="table-wrapper">
-
-            <table id="connections-table">
-
-                <thead>
-
-                    <tr>
-
-                        <th>
-                            Institution
-                        </th>
-
-                        <th>
-                            Country
-                        </th>
-
-                        <th>
-                            Region
-                        </th>
-
-                    </tr>
-
-                </thead>
-
-                <tbody id="connections-body">
-                </tbody>
-
-            </table>
-
-        </div>
+</div>
 
 
+<button
+    id="clear-filters"
+    type="button"
+    class="filter-clear">
 
-        <!-- EMPTY STATE -->
+    CLEAR FILTERS
 
-        <div
-            id="no-results"
-            class="tracker-empty"
-            hidden>
+</button>
+```
 
-            No institutions found.
-            Try changing your search or filters.
+</div>
 
-        </div>
+<!-- =====================================
+     RESULTS SUMMARY
+====================================== -->
+
+<div class="connections-summary">
+
+```
+<span id="results-count">
+    0
+</span>
+
+institutions shown
+```
+
+</div>
+
+<!-- =====================================
+     INSTITUTIONS TABLE
+====================================== -->
+
+<div class="table-wrapper">
+
+```
+<table id="connections-table">
+
+    <thead>
+
+        <tr>
+
+            <th>
+                Institution
+            </th>
+
+            <th>
+                Country
+            </th>
+
+            <th>
+                Region
+            </th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="connections-body">
+    </tbody>
+
+</table>
+```
+
+</div>
+
+<!-- =====================================
+     NO RESULTS
+====================================== -->
+
+<div
+    id="no-results"
+    class="tracker-empty"
+    hidden>
+
+```
+No institutions found.
+Try changing your filters.
+```
+
+</div>
 
 
 

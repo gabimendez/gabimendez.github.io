@@ -2948,7 +2948,7 @@ p {
 .global-connections-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 50px;
     align-items: start;
 }
 

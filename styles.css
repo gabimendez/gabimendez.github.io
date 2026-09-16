@@ -2934,7 +2934,7 @@ p {
    ========================================= */
 
 .global-connections-intro {
-    padding: 120px 8%;
+    padding: 60px 8%;
     background: #ebe6e4;
 }
 
@@ -2942,7 +2942,7 @@ p {
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.15em;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .global-connections-grid {

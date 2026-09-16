@@ -853,7 +853,7 @@ p {
 
 .recognition {
 
-    background: var(--pink);
+    background: var(--white);
 
 }
 
@@ -921,7 +921,39 @@ p {
     margin-top: 3rem;
 
 }
+.recognition-list {
+    margin-top: 3rem;
+}
 
+.recognition-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid #474444;
+}
+
+.recognition-item a {
+    display: contents;
+    color: inherit;
+    text-decoration: none;
+}
+
+.recognition-item strong {
+    grid-column: 1;
+}
+
+.recognition-item p {
+    grid-column: 1;
+    margin: 0.75rem 0 0;
+}
+
+.recognition-item span {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: start;
+    white-space: nowrap;
+}
 
 /* =========================================
    CONTACT

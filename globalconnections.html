@@ -1,231 +1,978 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Connections | Gabriela Méndez</title>
-    <link rel="stylesheet" href="styles.css">
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Global Connections by Gabriela Méndez — a growing record of institutions and educators connected through global learning, COIL, virtual exchange, professional development, and collaborative learning.">
+
+<title>Global Connections | Gabriela Méndez</title>
+
+<!-- Portfolio fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+<!-- Main portfolio stylesheet -->
+<link rel="stylesheet" href="styles.css">
+```
+
 </head>
-<body>
+
+<body class="resource-page">
+
+```
+<!-- =====================================
+     HEADER
+====================================== -->
 
 <header class="site-header">
-    <a href="index.html" class="site-logo">GABI.</a>
-    <nav class="site-nav">
+
+    <a href="index.html" class="logo">
+        GABI<span>.</span>
+    </a>
+
+    <nav class="navigation">
+
         <a href="index.html#work">WORK</a>
+
         <a href="index.html#about">ABOUT</a>
+
         <a href="index.html#recognition">RECOGNITION</a>
+
         <a href="index.html#contact">CONTACT</a>
+
     </nav>
+
+    <button class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false">
+        ☰
+    </button>
+
 </header>
 
+
+
+<!-- =====================================
+     MAIN
+====================================== -->
+
 <main>
+
+
+    <!-- =====================================
+         RESOURCE HERO
+    ====================================== -->
+
     <section class="resource-hero connections-hero">
-        <div class="resource-kicker">GLOBAL CONNECTIONS</div>
-        <p class="handwritten">faculty & educators from around the world.</p>
-        <h1>GLOBAL<br><span>CONNECTIONS.</span></h1>
-        <p class="resource-intro">
-            Through professional development, workshops, COIL initiatives, and
-            collaborative learning experiences, I've worked with faculty from
-            institutions across regions, disciplines, and cultures.
-        </p>
+
+        <div class="resource-hero-inner">
+
+            <div class="section-label">
+                GLOBAL CONNECTIONS
+            </div>
+
+            <p class="handwritten">
+                faculty & educators from around the world.
+            </p>
+
+            <h1>
+                GLOBAL<br>
+                <span>CONNECTIONS.</span>
+            </h1>
+
+            <p class="resource-intro">
+
+                Through professional development, workshops, COIL
+                initiatives, and collaborative learning experiences,
+                I've had the opportunity to work with faculty and
+                educators across regions, disciplines, and cultures.
+
+            </p>
+
+        </div>
+
     </section>
 
-    <section class="resource-section">
-        <div class="section-label">01 · THE PEOPLE</div>
-        <div class="resource-two-column">
-            <div>
-                <h2>LEARNING<br><span>TOGETHER.</span></h2>
-            </div>
-            <div>
-                <p>
-                    This is a growing record of the institutions represented by
-                    faculty and educators I've had the opportunity to work with
-                    through professional development and collaborative learning.
-                </p>
-                <p>
-                    The list reflects the global community that makes this work
-                    meaningful — across countries, disciplines, languages, and
-                    educational contexts.
-                </p>
-            </div>
+
+
+    <!-- =====================================
+         ABOUT THE RESOURCE
+    ====================================== -->
+
+    <section class="resource-description">
+
+        <div class="resource-description-label">
+
+            <span>01</span>
+
+            ABOUT<br>
+            THE<br>
+            CONNECTIONS
+
         </div>
+
+
+        <div class="resource-description-content">
+
+            <p>
+                Global Connections is a growing record of the institutions
+                represented by faculty and educators I've had the
+                opportunity to work with through professional development,
+                COIL, virtual exchange, and collaborative learning.
+            </p>
+
+            <p>
+                It reflects the people behind the partnerships and
+                learning experiences that have shaped my work over the
+                years — across countries, regions, disciplines,
+                languages, and educational contexts.
+            </p>
+
+            <p>
+                Rather than simply counting institutions or countries,
+                this collection represents the
+                <strong>relationships, conversations, and shared learning
+                experiences</strong> that make global learning meaningful.
+            </p>
+
+
+            <div class="resource-note">
+
+                <strong>WHY IT MATTERS</strong>
+
+                <p>
+                    Global learning grows through relationships. Every
+                    institution represents educators, ideas, perspectives,
+                    and opportunities to learn with and from one another.
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
+
+
+
+    <!-- =====================================
+         CONNECTIONS TRACKER
+    ====================================== -->
 
     <section class="tracker-section connections-tracker">
-        <div class="section-label">02 · EXPLORE THE CONNECTIONS</div>
+
+
+        <!-- HEADING -->
 
         <div class="tracker-heading">
+
             <div>
-                <p class="tracker-eyebrow">FACULTY REPRESENTED</p>
-                <h2><span id="connection-count">0</span> INSTITUTIONS.</h2>
+
+                <div class="section-label">
+                    02 · EXPLORE
+                </div>
+
+                <h2>
+                    FIND THE<br>
+                    <span>CONNECTIONS.</span>
+                </h2>
+
             </div>
-            <p class="tracker-note">
-                Filter by region or country, or search for an institution.
+
+
+            <p>
+                Explore the institutions represented in my global
+                learning network. Search by institution or filter
+                by country and region.
             </p>
+
         </div>
+
+
+
+        <!-- FILTERS -->
 
         <div class="tracker-filters">
-            <div class="filter-group">
-                <label for="connection-search">SEARCH</label>
-                <input type="search" id="connection-search"
-                       placeholder="Search institution...">
+
+
+            <div class="filter-group search-group">
+
+                <label for="connection-search">
+                    SEARCH
+                </label>
+
+                <input
+                    type="search"
+                    id="connection-search"
+                    placeholder="Search institutions..."
+                    autocomplete="off">
+
             </div>
 
+
             <div class="filter-group">
-                <label for="region-filter">REGION</label>
+
+                <label for="region-filter">
+                    REGION
+                </label>
+
                 <select id="region-filter">
-                    <option value="">All regions</option>
+
+                    <option value="">
+                        All Regions
+                    </option>
+
                 </select>
+
             </div>
+
 
             <div class="filter-group">
-                <label for="country-filter">COUNTRY</label>
+
+                <label for="country-filter">
+                    COUNTRY
+                </label>
+
                 <select id="country-filter">
-                    <option value="">All countries</option>
+
+                    <option value="">
+                        All Countries
+                    </option>
+
                 </select>
+
             </div>
 
-            <button id="clear-filters" class="filter-clear">CLEAR FILTERS</button>
+
+            <button
+                id="clear-filters"
+                type="button"
+                class="filter-clear">
+
+                CLEAR FILTERS
+
+            </button>
+
         </div>
+
+
+
+        <!-- RESULTS SUMMARY -->
 
         <div class="connections-summary">
-            <span id="results-count">0</span> institutions shown
+
+            <span id="results-count">
+                0
+            </span>
+
+            institutions shown
+
         </div>
 
-        <div class="tracker-table-wrap">
-            <table class="tracker-table connections-table">
+
+
+        <!-- TABLE -->
+
+        <div class="table-wrapper">
+
+            <table id="connections-table">
+
                 <thead>
+
                     <tr>
-                        <th>INSTITUTION</th>
-                        <th>COUNTRY</th>
-                        <th>REGION</th>
+
+                        <th>
+                            Institution
+                        </th>
+
+                        <th>
+                            Country
+                        </th>
+
+                        <th>
+                            Region
+                        </th>
+
                     </tr>
+
                 </thead>
+
                 <tbody id="connections-body">
                 </tbody>
+
             </table>
+
         </div>
 
-        <div id="no-results" class="tracker-empty" hidden>
-            No institutions match your filters.
+
+
+        <!-- EMPTY STATE -->
+
+        <div
+            id="no-results"
+            class="tracker-empty"
+            hidden>
+
+            No institutions found.
+            Try changing your search or filters.
+
         </div>
+
+
+
+        <!-- DATA NOTE -->
+
+        <p class="tracker-disclaimer">
+
+            <strong>PLEASE NOTE:</strong>
+
+            This is a growing record rather than a complete list.
+            It represents institutions connected through different
+            professional and collaborative learning experiences.
+            The list will continue to evolve as new connections are made.
+
+        </p>
+
     </section>
+
+
+
+    <!-- =====================================
+         REFLECTION
+    ====================================== -->
 
     <section class="connections-quote">
-        <div class="connections-quote-mark">“</div>
+
+        <div class="connections-quote-mark">
+            “
+        </div>
+
         <p>
+
             Global learning is not only about connecting institutions.
-            It's about creating meaningful opportunities for people to learn
-            with and from one another.
+            It's about creating meaningful opportunities for people to
+            learn <strong>with</strong> and <strong>from</strong>
+            one another.
+
         </p>
+
     </section>
+
+
+
+    <!-- =====================================
+         MORE RESOURCES
+    ====================================== -->
+
+    <section class="other-work">
+
+        <div class="section-label">
+            03 · MORE RESOURCES
+        </div>
+
+        <h2>
+            EXPLORE<br>
+            <span>MORE WORK.</span>
+        </h2>
+
+
+        <div class="other-work-list">
+
+
+            <a
+                href="conferencetracker.html"
+                class="other-work-item">
+
+                <span class="other-work-number">
+                    01
+                </span>
+
+                <span>
+                    Conference Tracker
+                </span>
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a
+                href="globalconnections.html"
+                class="other-work-item current">
+
+                <span class="other-work-number">
+                    02
+                </span>
+
+                <span>
+                    Global Connections
+                </span>
+
+                <span>
+                    CURRENT
+                </span>
+
+            </a>
+
+
+            <a
+                href="language.html"
+                class="other-work-item">
+
+                <span class="other-work-number">
+                    03
+                </span>
+
+                <span>
+                    Language Acknowledgement
+                </span>
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a
+                href="guide.html"
+                class="other-work-item">
+
+                <span class="other-work-number">
+                    04
+                </span>
+
+                <span>
+                    Technology Tools for COIL:
+                    Data Privacy Guide
+                </span>
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a
+                href="virtualinteraction.html"
+                class="other-work-item">
+
+                <span class="other-work-number">
+                    05
+                </span>
+
+                <span>
+                    Manual for Virtual Interaction
+                </span>
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         BACK TO PORTFOLIO
+    ====================================== -->
+
+    <section class="resource-back">
+
+        <a href="index.html">
+
+            ← BACK TO PORTFOLIO
+
+        </a>
+
+    </section>
+
+
 </main>
 
-<footer class="site-footer">
+
+
+<!-- =====================================
+     FOOTER
+====================================== -->
+
+<footer class="footer">
+
     <div>
-        <strong>GABRIELA MÉNDEZ</strong>
-        <span>Mexico · Working globally</span>
+
+        <strong>
+            GABRIELA MÉNDEZ
+        </strong>
+
+        <span>
+            Mexico · Working globally
+        </span>
+
     </div>
-    <a href="index.html">← BACK TO PORTFOLIO</a>
+
+
+    <div class="footer-links">
+
+        <a
+            href="https://www.linkedin.com/in/gmendezc/"
+            target="_blank"
+            rel="noopener">
+
+            LinkedIn
+
+        </a>
+
+
+        <a href="mailto:gabimendezcarrera@gmail.com">
+
+            Email
+
+        </a>
+
+    </div>
+
 </footer>
 
+
+
+<!-- =====================================
+     GLOBAL CONNECTIONS SCRIPT
+====================================== -->
+
 <script>
-let connections = [];
 
-const searchInput = document.getElementById('connection-search');
-const regionFilter = document.getElementById('region-filter');
-const countryFilter = document.getElementById('country-filter');
-const body = document.getElementById('connections-body');
-const resultsCount = document.getElementById('results-count');
-const connectionCount = document.getElementById('connection-count');
-const noResults = document.getElementById('no-results');
+    let connections = [];
 
-fetch('globalconnections.json')
-    .then(response => {
-        if (!response.ok) throw new Error('Could not load globalconnections.json');
-        return response.json();
-    })
-    .then(data => {
-        connections = data;
-        connectionCount.textContent = connections.length;
-        populateFilters();
-        renderConnections();
-    })
-    .catch(error => {
-        console.error(error);
-        body.innerHTML = '<tr><td colspan="3">Unable to load the connections list.</td></tr>';
-    });
 
-function populateFilters() {
-    const regions = [...new Set(connections.map(item => item.region))].sort();
-    const countries = [...new Set(connections.map(item => item.country))].sort();
+    /* =====================================
+       DOM ELEMENTS
+    ====================================== */
 
-    regions.forEach(region => {
-        regionFilter.insertAdjacentHTML(
-            'beforeend',
-            `<option value="${escapeHtml(region)}">${escapeHtml(region)}</option>`
+    const searchInput =
+        document.getElementById(
+            "connection-search"
         );
-    });
 
-    countries.forEach(country => {
-        countryFilter.insertAdjacentHTML(
-            'beforeend',
-            `<option value="${escapeHtml(country)}">${escapeHtml(country)}</option>`
+    const regionFilter =
+        document.getElementById(
+            "region-filter"
         );
-    });
-}
 
-function renderConnections() {
-    const search = searchInput.value.toLowerCase().trim();
-    const region = regionFilter.value;
-    const country = countryFilter.value;
+    const countryFilter =
+        document.getElementById(
+            "country-filter"
+        );
 
-    const filtered = connections
-        .filter(item => {
-            const matchesSearch =
-                item.name.toLowerCase().includes(search);
-            const matchesRegion =
-                !region || item.region === region;
-            const matchesCountry =
-                !country || item.country === country;
+    const connectionsBody =
+        document.getElementById(
+            "connections-body"
+        );
 
-            return matchesSearch && matchesRegion && matchesCountry;
+    const resultsCount =
+        document.getElementById(
+            "results-count"
+        );
+
+    const noResults =
+        document.getElementById(
+            "no-results"
+        );
+
+    const clearFiltersButton =
+        document.getElementById(
+            "clear-filters"
+        );
+
+
+
+    /* =====================================
+       LOAD DATA
+    ====================================== */
+
+    fetch("globalconnections.json")
+
+        .then(response => {
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Could not load globalconnections.json"
+                );
+
+            }
+
+            return response.json();
+
         })
-        .sort((a, b) => a.name.localeCompare(b.name));
 
-    body.innerHTML = filtered.map(item => `
-        <tr>
-            <td>${escapeHtml(item.name)}</td>
-            <td>${escapeHtml(item.country)}</td>
-            <td>${escapeHtml(item.region)}</td>
-        </tr>
-    `).join('');
+        .then(data => {
 
-    resultsCount.textContent = filtered.length;
-    noResults.hidden = filtered.length !== 0;
-}
+            connections = Array.isArray(data)
+                ? data
+                : [];
 
-function clearFilters() {
-    searchInput.value = '';
-    regionFilter.value = '';
-    countryFilter.value = '';
-    renderConnections();
-}
+            populateFilters();
 
-function escapeHtml(value) {
-    return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
-}
+            renderConnections();
 
-searchInput.addEventListener('input', renderConnections);
-regionFilter.addEventListener('change', renderConnections);
-countryFilter.addEventListener('change', renderConnections);
-document.getElementById('clear-filters').addEventListener('click', clearFilters);
+        })
+
+        .catch(error => {
+
+            console.error(error);
+
+            connectionsBody.innerHTML = `
+
+                <tr>
+
+                    <td colspan="3">
+
+                        Unable to load the connections list.
+
+                    </td>
+
+                </tr>
+
+            `;
+
+        });
+
+
+
+    /* =====================================
+       POPULATE FILTERS
+    ====================================== */
+
+    function populateFilters() {
+
+
+        const regions = [
+            ...new Set(
+
+                connections
+                    .map(item => item.region)
+                    .filter(Boolean)
+
+            )
+
+        ].sort(
+            (a, b) =>
+                a.localeCompare(b)
+        );
+
+
+        const countries = [
+            ...new Set(
+
+                connections
+                    .map(item => item.country)
+                    .filter(Boolean)
+
+            )
+
+        ].sort(
+            (a, b) =>
+                a.localeCompare(b)
+        );
+
+
+
+        regions.forEach(region => {
+
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value = region;
+
+            option.textContent = region;
+
+            regionFilter.appendChild(
+                option
+            );
+
+        });
+
+
+
+        countries.forEach(country => {
+
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value = country;
+
+            option.textContent = country;
+
+            countryFilter.appendChild(
+                option
+            );
+
+        });
+
+    }
+
+
+
+    /* =====================================
+       FILTER CONNECTIONS
+    ====================================== */
+
+    function getFilteredConnections() {
+
+
+        const search =
+            searchInput.value
+                .toLowerCase()
+                .trim();
+
+
+        const region =
+            regionFilter.value;
+
+
+        const country =
+            countryFilter.value;
+
+
+
+        return connections
+
+            .filter(item => {
+
+
+                const name =
+                    String(
+                        item.name || ""
+                    );
+
+
+                const itemCountry =
+                    String(
+                        item.country || ""
+                    );
+
+
+                const itemRegion =
+                    String(
+                        item.region || ""
+                    );
+
+
+
+                const matchesSearch =
+
+                    !search ||
+
+                    name
+                        .toLowerCase()
+                        .includes(search);
+
+
+
+                const matchesRegion =
+
+                    !region ||
+
+                    itemRegion === region;
+
+
+
+                const matchesCountry =
+
+                    !country ||
+
+                    itemCountry === country;
+
+
+
+                return (
+
+                    matchesSearch &&
+
+                    matchesRegion &&
+
+                    matchesCountry
+
+                );
+
+            })
+
+            .sort(
+                (a, b) =>
+                    String(a.name || "")
+                        .localeCompare(
+                            String(b.name || "")
+                        )
+            );
+
+    }
+
+
+
+    /* =====================================
+       RENDER TABLE
+    ====================================== */
+
+    function renderConnections() {
+
+
+        const filtered =
+            getFilteredConnections();
+
+
+
+        connectionsBody.innerHTML = "";
+
+
+
+        filtered.forEach(item => {
+
+
+            const row =
+                document.createElement(
+                    "tr"
+                );
+
+
+            const institutionCell =
+                document.createElement(
+                    "td"
+                );
+
+
+            const countryCell =
+                document.createElement(
+                    "td"
+                );
+
+
+            const regionCell =
+                document.createElement(
+                    "td"
+                );
+
+
+
+            institutionCell.textContent =
+                item.name || "—";
+
+
+            countryCell.textContent =
+                item.country || "—";
+
+
+            regionCell.textContent =
+                item.region || "—";
+
+
+
+            institutionCell.className =
+                "event-name";
+
+
+
+            row.appendChild(
+                institutionCell
+            );
+
+            row.appendChild(
+                countryCell
+            );
+
+            row.appendChild(
+                regionCell
+            );
+
+
+            connectionsBody.appendChild(
+                row
+            );
+
+        });
+
+
+
+        resultsCount.textContent =
+            filtered.length;
+
+
+
+        noResults.hidden =
+            filtered.length !== 0;
+
+    }
+
+
+
+    /* =====================================
+       CLEAR FILTERS
+    ====================================== */
+
+    function clearFilters() {
+
+        searchInput.value = "";
+
+        regionFilter.value = "";
+
+        countryFilter.value = "";
+
+        renderConnections();
+
+    }
+
+
+
+    /* =====================================
+       EVENT LISTENERS
+    ====================================== */
+
+    searchInput.addEventListener(
+        "input",
+        renderConnections
+    );
+
+
+    regionFilter.addEventListener(
+        "change",
+        renderConnections
+    );
+
+
+    countryFilter.addEventListener(
+        "change",
+        renderConnections
+    );
+
+
+    clearFiltersButton.addEventListener(
+        "click",
+        clearFilters
+    );
+
 </script>
+```
 
 </body>
+
 </html>

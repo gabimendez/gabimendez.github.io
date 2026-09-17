@@ -487,9 +487,9 @@ p {
 
 .service-card {
 
-    min-height: 250px;
+    min-height: 200px;
 
-    padding: 3rem;
+    padding: 2rem;
 
     border-right: 2px solid var(--black);
 
